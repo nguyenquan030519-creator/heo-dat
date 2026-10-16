@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="none" fill="none">
+<circle cx="1240" cy="160" r="78" fill="#edcf9d" opacity=".2"/><circle cx="1240" cy="160" r="58" fill="#edcf9d" opacity=".6"/>
+<g fill="#12101e" opacity=".75"><path d="M1050 132q28 -35 42 -5 18 -15 39 8-28 -5 -38 15-17 -15 -43 -18ZM181 205q28 -35 42 -5 18 -15 39 8-28 -5 -38 15-17 -15 -43 -18Z"/>
+<path d="M0 900V780L80 720 160 780V900ZM66 735V650L82 620 98 650V735ZM1290 900V730L1360 660 1430 730V900Z"/></g>
+<g fill="#d89153" opacity=".45"><path d="M66 800h28v48H66ZM1340 765h35v60h-35Z"/></g>
+<g stroke="#1b1528" stroke-width="14" opacity=".7"><path d="M0 660q130 -125 110 -330M104 420L30 355M105 470L204 388M1440 680q-130 -125 -110 -330M1336 440L1410 375M1335 490L1236 408"/></g>
+<g fill="#b5683c" opacity=".35"><ellipse cx="245" cy="850" rx="50" ry="35"/><ellipse cx="1210" cy="860" rx="46" ry="30"/></g>
+<g stroke="#d9ba83" opacity=".16"><path d="M32 34h290M32 34v190M32 34l115 115M32 80q40 -2 46 -46M32 130q85 -5 96 -96M32 180q135 -8 146 -146"/></g>
+</svg>

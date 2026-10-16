@@ -12,6 +12,11 @@
     { id: 'halloween', name: 'Halloween', sub: 'Ma Nợ & bí ngô cười gian', left: 'bg/halloween-left.svg', right: 'bg/halloween-right.svg', color: '#1d1528', sw: '#3b2a5a' },
     { id: 'trungthu', name: 'Trung thu', sub: 'Đèn ông sao & bánh nướng', left: 'bg/trungthu-left.svg', right: 'bg/trungthu-right.svg', color: '#10213f', sw: '#1b3360' },
     { id: 'noel', name: 'Noel', sub: 'Người tuyết & Heo tuần lộc', left: 'bg/noel-left.svg', right: 'bg/noel-right.svg', color: '#1b7f4b', sw: '#e3f2f6' },
+    { id: 'tet-kitty', name: 'Tết · Kitty giữ lộc', sub: 'Hello Kitty cất lì xì vào heo', left: 'bg/tet-kitty-left.svg', right: 'bg/tet-kitty-right.svg', color: '#f8e5dd', sw: '#f8e5dd', cinematic: true },
+    { id: 'newyear-bateman', name: 'Năm mới · Sếp Bateman', sub: 'Danh thiếp đẹp, số dư còn đẹp hơn', left: 'bg/portraits/newyear-bateman-left.webp', right: 'bg/newyear-bateman-right.svg', color: '#17242d', sw: '#17242d', cinematic: true },
+    { id: 'halloween-grownups', name: 'Halloween · Hội bạn ma', sub: 'Grown Ups: hết hồn vì hóa đơn', left: 'bg/portraits/halloween-grownups-left.webp', right: 'bg/portraits/halloween-grownups-right.webp', color: '#251d36', sw: '#251d36', cinematic: true },
+    { id: 'jungle-fund', name: 'Quỹ phiêu lưu', sub: 'The Rock & Kevin Hart săn xu', left: 'bg/portraits/jungle-fund-left.webp', right: 'bg/portraits/jungle-fund-right.webp', color: '#18382d', sw: '#18382d', cinematic: true },
+    { id: 'mib-saving', name: 'Men in Black · Giữ ví', sub: 'Bắt quái vật tiêu hoang về nuôi heo', left: 'bg/portraits/mib-saving-left.webp', right: 'bg/mib-saving-right.svg', color: '#101e2c', sw: '#101e2c', cinematic: true },
     { id: 'tron', name: 'Trơn', sub: 'Không hình, đỡ rối mắt', ico: '⬜', color: '#14a06a', sw: '#fff4d6' }
   ];
 })();

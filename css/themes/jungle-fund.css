@@ -1,0 +1,11 @@
+/* Phiêu lưu: lá rừng tối, ánh sáng giữa rừng, thẻ màu giấy cát. */
+html[data-theme="jungle-fund"] {
+  --paper:#18382d; --card:#f4ecda; --text:#273a2c; --muted:#61694e; --stroke:#142a23; --line:#d2ccb6;
+  --green:#356148; --green-dk:#244c36; --gold:#ddb66c; --gold-dk:#a47a3c;
+  --scene-art:url('../bg/scenes/jungle-fund.svg');
+  --scene-light:radial-gradient(ellipse at 50% 12%,#c5b77b66,transparent 65%),linear-gradient(#173e30,#09281f);
+  --bill-fill:linear-gradient(125deg,#4a7150,#203f30);
+  --note-1:#ebd5a7; --note-2:#d8dfb9; --note-3:#c9dbcd; --note-4:#e5c9ac;
+}
+html[data-theme="jungle-fund"] .top { color:#fff0d5; }
+html[data-theme="jungle-fund"] .top .cycle { color:#d2ddc6; }

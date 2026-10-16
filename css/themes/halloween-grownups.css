@@ -1,0 +1,9 @@
+/* Đêm Halloween: tím mực, trăng kem và ánh đèn bí ngô. */
+html[data-theme="halloween-grownups"] {
+  --paper:#251d36; --card:#342b44; --text:#fff0dd; --muted:#d0bed6; --stroke:#160f22; --line:#5c4965;
+  --green:#a24b30; --green-dk:#783724; --gold:#efb56b; --gold-dk:#bf7c36;
+  --scene-art:url('../bg/scenes/halloween-grownups.svg');
+  --scene-light:radial-gradient(ellipse at 15% 85%,#9b532866,transparent 40%),radial-gradient(ellipse at 85% 40%,#73508655,transparent 42%),linear-gradient(#181526,#382641);
+  --bill-fill:linear-gradient(125deg,#73516e,#39283f);
+  --note-1:#edce9f; --note-2:#d7d6bb; --note-3:#d7cce6; --note-4:#e7c0ad;
+}

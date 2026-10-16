@@ -1,0 +1,9 @@
+/* Tết: lụa hồng, lì xì đỏ, nét vàng mai. */
+html[data-theme="tet-kitty"] {
+  --paper:#f8e5dd; --card:#fff8f0; --text:#542b36; --muted:#86515d; --stroke:#642d3b; --line:#e6b8b3;
+  --green:#ad3454; --green-dk:#82283d; --gold:#ecc46f; --gold-dk:#bb8e38;
+  --scene-art:url('../bg/scenes/tet-kitty.svg');
+  --scene-light:radial-gradient(ellipse at 50% 35%,#fff7e9 0%,#f8e5dd 55%,#e6a1a7 100%);
+  --bill-fill:linear-gradient(125deg,#b53d57,#752c41);
+  --note-1:#f4dbab; --note-2:#e5e6c6; --note-3:#eadce5; --note-4:#f4ccd0;
+}

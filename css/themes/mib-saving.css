@@ -1,0 +1,9 @@
+/* Men in Black: ciel nocturne, orbites et grille discrète de quartier général. */
+html[data-theme="mib-saving"] {
+  --paper:#101e2c; --card:#1d303e; --text:#e4f1f1; --muted:#b1c9d2; --stroke:#060f19; --line:#385460;
+  --green:#386b7b; --green-dk:#234c59; --gold:#bad5cf; --gold-dk:#7fa8a2;
+  --scene-art:url('../bg/scenes/mib-saving.svg');
+  --scene-light:radial-gradient(ellipse at 20% 60%,#34617e55,transparent 42%),radial-gradient(ellipse at 85% 70%,#39786b33,transparent 38%),linear-gradient(#080f1b,#172d3d);
+  --bill-fill:linear-gradient(125deg,#315e70,#152c3c);
+  --note-1:#e1d8b9; --note-2:#c6dfd5; --note-3:#c4dbe6; --note-4:#d6d0e1;
+}

@@ -1,0 +1,8 @@
+/* Manhattan ban đêm: xanh áo vest, vàng champagne và khung Art déco. */
+html[data-theme="newyear-bateman"] {
+  --paper:#17242d; --card:#24333c; --text:#f8edda; --muted:#bcc7cb; --stroke:#0a151e; --line:#48535a;
+  --green:#496a7a; --green-dk:#274550; --gold:#dfbc78; --gold-dk:#aa8746;
+  --scene-art:url('../bg/scenes/newyear-bateman.svg');
+  --scene-light:radial-gradient(ellipse at 16% 64%,#70594355,transparent 38%),radial-gradient(ellipse at 85% 55%,#4c637966,transparent 40%),linear-gradient(#101c27,#233642);
+  --bill-fill:linear-gradient(125deg,#46606c,#172c39);
+}
