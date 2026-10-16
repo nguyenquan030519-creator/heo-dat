@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500">
+<!-- ĐẠI GIA – Túi Tiền Sang Chảnh (bên trái, nhếch mép, giơ ngón cái) -->
+<style>
+.k{stroke:#1a1410;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+.bob{animation:bob 3s ease-in-out infinite;transform-origin:150px 470px}
+@keyframes bob{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2.5deg)}}
+.tw{animation:tw 1.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.t2{animation-delay:.5s}.t3{animation-delay:1s}
+@keyframes tw{0%,100%{transform:scale(.5);opacity:.3}50%{transform:scale(1.15);opacity:1}}
+</style>
+<!-- chồng xu -->
+<g class="k" fill="#ffcc33" style="stroke-width:5">
+  <ellipse cx="248" cy="484" rx="34" ry="10"/><ellipse cx="248" cy="472" rx="34" ry="10"/><ellipse cx="248" cy="460" rx="34" ry="10"/><ellipse cx="248" cy="448" rx="34" ry="10"/>
+  <ellipse cx="40" cy="486" rx="30" ry="9"/><ellipse cx="40" cy="475" rx="30" ry="9"/>
+</g>
+<g class="bob">
+  <!-- tay giơ ngón cái -->
+  <path class="k" fill="#d9b25c" d="M246 372 C268 360 276 340 280 322" style="stroke-width:16"/>
+  <path d="M246 372 C268 360 276 340 280 322" stroke="#d9b25c" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <rect class="k" fill="#f6cba2" x="264" y="296" width="34" height="30" rx="12"/>
+  <rect class="k" fill="#f6cba2" x="270" y="270" width="13" height="32" rx="6"/>
+  <!-- thân túi -->
+  <path class="k" fill="#d9b25c" d="M150 214 C70 226 34 320 40 400 C46 478 254 478 260 400 C266 320 230 226 150 214 Z"/>
+  <path d="M78 300 C70 340 70 390 86 430" stroke="#f3d48a" stroke-width="10" fill="none" stroke-linecap="round" opacity=".8"/>
+  <path class="k" fill="#d9b25c" d="M112 214 C92 174 122 150 150 182 C178 150 208 174 188 214 Z"/>
+  <rect class="k" fill="#7a5420" x="106" y="204" width="88" height="20" rx="10"/>
+  <!-- kính râm + lông mày nhướn -->
+  <rect class="k" fill="#14141f" x="88" y="286" width="56" height="32" rx="12"/>
+  <rect class="k" fill="#14141f" x="156" y="286" width="56" height="32" rx="12"/>
+  <path class="k" d="M144 298 L156 298" style="stroke-width:5"/>
+  <path d="M98 298 l14 -5 M166 298 l14 -5" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <path class="k" fill="none" d="M92 276 L138 278" style="stroke-width:7"/>
+  <path class="k" fill="none" d="M160 268 Q186 252 210 272" style="stroke-width:7"/>
+  <!-- má, miệng nhếch, răng vàng -->
+  <ellipse cx="88" cy="340" rx="14" ry="8" fill="#ff8a7a" opacity=".55"/>
+  <ellipse cx="214" cy="336" rx="14" ry="8" fill="#ff8a7a" opacity=".55"/>
+  <path class="k" fill="#fff" d="M112 342 Q160 368 196 330 Q160 350 112 342 Z" style="stroke-width:5"/>
+  <rect x="166" y="342" width="10" height="9" fill="#ffcc33" stroke="#1a1410" stroke-width="2"/>
+  <!-- dây chuyền vàng -->
+  <path d="M66 372 Q150 432 234 372" stroke="#1a1410" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <path d="M66 372 Q150 432 234 372" stroke="#ffcc33" stroke-width="6" fill="none" stroke-dasharray="8 6" stroke-linecap="round"/>
+  <circle class="k" fill="#ffcc33" cx="150" cy="414" r="24"/>
+  <text x="150" y="425" font-family="Arial Black,Arial" font-weight="900" font-size="30" text-anchor="middle" fill="#1a1410">₫</text>
+</g>
+<!-- lấp lánh -->
+<g fill="#ffe680" stroke="#1a1410" stroke-width="3" stroke-linejoin="round">
+  <path class="tw" transform="translate(60 196)" d="M0 -16 L5 -5 L16 0 L5 5 L0 16 L-5 5 L-16 0 L-5 -5 Z"/>
+  <path class="tw t2" transform="translate(236 210)" d="M0 -12 L4 -4 L12 0 L4 4 L0 12 L-4 4 L-12 0 L-4 -4 Z"/>
+  <path class="tw t3" transform="translate(30 330)" d="M0 -10 L3 -3 L10 0 L3 3 L0 10 L-3 3 L-10 0 L-3 -3 Z"/>
+</g>
+</svg>

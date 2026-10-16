@@ -1,0 +1,30 @@
+/* MÀN HÌNH KẾ HOẠCH TIẾT KIỆM – ô nhập 2 cột, nút tra giá, dòng kết quả, biểu đồ */
+
+.plan-intro { background: var(--gold); color: #2a1f14; }
+.plan-intro .small { color: #5a4a35; }
+
+.pgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 10px; }
+@media (max-width: 380px) { .pgrid { grid-template-columns: 1fr; } }
+
+.p-upd { font: 700 12px var(--font); color: var(--muted); }
+.p-links { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 2px; }
+.p-links .btn { text-decoration: none; display: inline-flex; align-items: center; flex: 1 1 140px; justify-content: center; font-size: 14px; }
+.p-grow { margin: 0; padding-left: 0; padding-right: 0; flex-wrap: wrap; }
+
+.p-put { margin-bottom: 6px; }
+.p-row { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 2px dashed var(--line); }
+.p-row:last-child { border-bottom: none; }
+.p-ico { width: 44px; height: 44px; flex: none; border-radius: 14px; border: 2px solid var(--stroke); display: grid; place-items: center; font-size: 22px; box-shadow: var(--sh-sm); }
+.p-t { flex: 1; min-width: 0; }
+.p-t b { display: block; }
+.p-t .small { display: block; font-size: 12px; }
+.p-v { text-align: right; white-space: nowrap; }
+.p-v b { display: block; font: 800 17px var(--font-head); }
+.p-v span { font-size: 12px; font-weight: 800; }
+.p-v .up { color: #14a06a; }
+.p-v .down { color: #ef4b4b; }
+
+.p-chart { margin-top: 10px; color: var(--text); }
+.p-chart svg { width: 100%; height: auto; display: block; border: 2px dashed var(--line); border-radius: 14px; background: var(--paper); }
+
+.p-tips p { margin: 6px 0; font-size: 14px; }

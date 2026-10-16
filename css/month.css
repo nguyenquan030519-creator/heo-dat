@@ -1,0 +1,32 @@
+/* MÀN HÌNH THÁNG NÀY – nhiệt kế, hoá đơn răng cưa, thanh danh mục */
+
+.thermo { position: relative; height: 28px; margin: 8px 0; border: var(--bw) solid var(--stroke); border-radius: 15px; background: var(--paper); overflow: hidden; }
+.thermo i { display: block; height: 100%; width: 0; background: repeating-linear-gradient(45deg, #14a06a 0 12px, #2cc28a 12px 24px); border-right: var(--bw) solid var(--stroke); transition: width .7s cubic-bezier(.3, 1.4, .5, 1); }
+.thermo.warn i { background: repeating-linear-gradient(45deg, #ff8a3d 0 12px, #ffad70 12px 24px); }
+.thermo b { position: absolute; top: 0; bottom: 0; width: 4px; background: var(--stroke); }
+
+/* Hoá đơn giấy răng cưa */
+.receipt {
+  position: relative; margin: 0 0 34px; padding: 18px 18px 14px;
+  background: #fffef7; color: #2a1f14; border-radius: 6px 6px 0 0;
+  filter: drop-shadow(3px 0 0 var(--stroke)) drop-shadow(-3px 0 0 var(--stroke)) drop-shadow(0 3px 0 var(--stroke)) drop-shadow(0 -3px 0 var(--stroke)) drop-shadow(5px 5px 0 var(--stroke));
+  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+.receipt::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -14px; height: 14px;
+  background: linear-gradient(-45deg, transparent 10px, #fffef7 0) 0 0 / 20px 14px repeat-x,
+              linear-gradient(45deg, transparent 10px, #fffef7 0) 0 0 / 20px 14px repeat-x;
+}
+.receipt h2 { text-align: center; font-family: var(--font-head); border-bottom: 2px dashed #2a1f14; padding-bottom: 8px; }
+.receipt .rline { font-size: 14px; }
+.receipt .rline:last-child { font-size: 18px; color: #0b6b46; }
+
+/* Tiêu vào đâu */
+.catrow { display: flex; align-items: center; gap: 8px; margin: 10px 0; }
+.catrow .n { width: 128px; flex: none; font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.catrow .b { flex: 1; height: 18px; border: 2px solid var(--stroke); border-radius: 9px; background: var(--paper); overflow: hidden; }
+.catrow .b i { display: block; height: 100%; background: var(--gold); border-right: 2px solid var(--stroke); }
+.catrow .v { width: 58px; flex: none; text-align: right; font: 800 15px var(--font-head); }
+
+.dayhead { display: flex; justify-content: space-between; margin: 14px 0 0; font: 800 14px var(--font-head); color: var(--muted); }
+.dayhead:first-child { margin-top: 0; }

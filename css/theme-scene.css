@@ -1,0 +1,55 @@
+/* Bố cục dùng chung, lớp nền tĩnh và chế độ xem thử. Màu: themes/<id>.css. */
+body { isolation: isolate; }
+#scene { position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+.scene-actor { position: absolute; bottom: 0; height: min(64vh, 580px); aspect-ratio: 3 / 5; }
+.scene-actor.sc-l { left: max(-10px, calc(50% - 290px - min(64vh, 580px) * .6)); }
+.scene-actor.sc-r { right: max(-10px, calc(50% - 290px - min(64vh, 580px) * .6)); }
+.scene-actor img { display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: bottom; }
+.cinematic body::before {
+  background-image: var(--scene-art), var(--scene-light);
+  background-position: center bottom, center;
+  background-size: cover, cover;
+  background-repeat: no-repeat; opacity: 1;
+}
+.cinematic .bill:not(.warn):not(.bad) {
+  background: var(--bill-fill); color: #fff5df;
+}
+.cinematic .bill::before { border-color: #ffe2a14d; }
+.cinematic .sticker:nth-child(1) { background: var(--note-1, #ead5ab); }
+.cinematic .sticker:nth-child(2) { background: var(--note-2, #cbded0); }
+.cinematic .sticker:nth-child(3) { background: var(--note-3, #d2dce0); }
+.cinematic .sticker:nth-child(4) { background: var(--note-4, #e6d0c8); }
+.theme-actions { margin-top: 20px; }
+.theme-actions .btn { width: 100%; }
+.theme-tile[data-pick="newyear-bateman"], .theme-tile[data-pick="halloween-grownups"],
+.theme-tile[data-pick="jungle-fund"], .theme-tile[data-pick="mib-saving"] { color: #fff0d7; }
+.theme-tile[data-pick="tet-kitty"] { color: #622e3c; }
+.theme-tile .thumbs img { max-width: 48%; object-fit: contain; }
+@media (max-width: 760px) {
+  .scene-actor { height: min(29vh, 240px); opacity: .38; }
+  .scene-actor.sc-l { left: -28px; }
+  .scene-actor.sc-r { right: -28px; }
+  .cinematic body::before { background-size: 100% 100%, cover; }
+}
+/* Dialog chỉ chứa điều khiển; nền và hai nhân vật vẫn dùng DOM hiện tại. */
+#theme-preview { border: 0; padding: 0; background: transparent; width: 100%; height: 100%; max-width: none; max-height: none; color: var(--text); pointer-events: none; }
+#theme-preview::backdrop { background: transparent; }
+.scene-preview :is(.top, .wrap, #nav, #fab, #banner, #toast) { visibility: hidden; }
+.scene-preview .scene-actor { height: min(64vh, 620px); bottom: 160px; opacity: 1; }
+.scene-preview .sc-l { left: calc(50% - min(44vw, 580px)); }
+.scene-preview .sc-r { right: calc(50% - min(44vw, 580px)); }
+.scene-toolbar { pointer-events: auto; position: absolute; bottom: max(12px, env(safe-area-inset-bottom)); left: 50%; transform: translateX(-50%); width: min(540px, calc(100% - 24px)); padding: 16px; background: var(--card); border: var(--bw) solid var(--stroke); border-radius: 20px; box-shadow: var(--sh); text-align: center; }
+.scene-toolbar p { font-size: 12px; color: var(--muted); margin: 6px 0 12px; }
+.scene-buttons { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
+.scene-buttons .btn { min-height: 44px; padding: 8px 12px; font-size: 14px; }
+.scene-buttons button:disabled { opacity: .5; cursor: default; }
+@media (max-width: 760px) {
+  .scene-preview .scene-actor { width: 46vw; height: auto; bottom: 210px; }
+  .scene-preview .sc-l { left: 3vw; }
+  .scene-preview .sc-r { right: 3vw; }
+}
+@media (max-height: 520px) {
+  .scene-preview .scene-actor { height: 58vh; width: auto; bottom: 135px; }
+  .scene-toolbar { padding: 8px; }
+  .scene-toolbar p { display: none; }
+}

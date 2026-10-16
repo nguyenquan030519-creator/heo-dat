@@ -1,0 +1,116 @@
+/* Màu các nền cũ + ô chọn. Nền phim: css/themes/<id>.css. Bố cục: theme-scene.css. */
+/* ===== Đại gia: da đen, chữ vàng ===== */
+html[data-theme="daigia"] {
+  --paper: #17130e; --card: #241d15; --text: #ffe7a8; --muted: #cdb586; --stroke: #000; --line: #4a3b25;
+  --green: #1fae74; --gold: #ffcc33;
+  --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Cg fill='none' stroke='%23e0b030' stroke-width='2'%3E%3Cpath d='M20 8 L30 20 L20 32 L10 20 Z'/%3E%3Cpath d='M65 53 L75 65 L65 77 L55 65 Z'/%3E%3C/g%3E%3Ctext x='60' y='30' font-size='20' font-family='Arial Black' fill='%23e0b030'%3E%24%3C/text%3E%3C/svg%3E");
+  --pattern-op: .22;
+}
+html[data-theme="daigia"] .bill:not(.warn):not(.bad) { background: radial-gradient(circle at 85% 120%, rgba(255, 204, 51, .22) 0 70px, transparent 71px), linear-gradient(135deg, #3b2e18, #0d0a06); }
+html[data-theme="daigia"] .bill::before { border-color: rgba(255, 204, 51, .7); }
+html[data-theme="daigia"] .bill:not(.warn):not(.bad) .bill-amt { color: #ffd95a; }
+
+/* ===== Cute: hồng pastel ===== */
+html[data-theme="cute"] {
+  --paper: #ffe6f0; --card: #fffafc; --text: #5a2a45; --muted: #a86a8a; --stroke: #5a2a45; --line: #f6c9dc;
+  --green: #ff6fa8; --gold: #ffd36e; --gold-dk: #f0a830;
+  --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cpath d='M25 34 C10 20 18 8 25 18 C32 8 40 20 25 34 Z' fill='%23ff8fbf'/%3E%3Cpath d='M72 62 l4 9 l9 4 l-9 4 l-4 9 l-4 -9 l-9 -4 l9 -4 Z' fill='%23ffc94d'/%3E%3Ccircle cx='80' cy='20' r='4' fill='%23b9a3ff'/%3E%3C/svg%3E");
+  --pattern-op: .45;
+}
+html[data-theme="cute"] .bill:not(.warn):not(.bad) { background: radial-gradient(circle at 85% 120%, rgba(255, 255, 255, .25) 0 70px, transparent 71px), linear-gradient(135deg, #ff9cc7, #ff5f9e); }
+
+/* ===== Cuối tháng: xám nghèo ===== */
+html[data-theme="cuoithang"] {
+  --paper: #e9eef2; --card: #ffffff; --text: #2b3038; --muted: #6b7684; --stroke: #2b3038; --line: #d5dde5;
+  --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='110' height='110'%3E%3Ctext x='8' y='34' font-size='18' font-family='Arial Black' fill='%2390a0b0'%3E0%C4%91%3C/text%3E%3Cg fill='%2390a0b0'%3E%3Cellipse cx='72' cy='78' rx='7' ry='5'/%3E%3Cellipse cx='86' cy='78' rx='7' ry='5'/%3E%3Crect x='77' y='72' width='4' height='12' rx='2'/%3E%3C/g%3E%3C/svg%3E");
+  --pattern-op: .35;
+}
+html[data-theme="cuoithang"] .bill:not(.warn):not(.bad) { background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, .05) 0 8px, transparent 8px 16px), linear-gradient(135deg, #8492a6, #4a5568); }
+
+/* ===== Bobble Sếp: tím tiệc tùng, tiền xanh ===== */
+html[data-theme="bobble"] {
+  --paper: #f3e8ff; --card: #fffaff; --text: #3c1361; --muted: #7d5ba6; --stroke: #2a0f45; --line: #e3d0f7;
+  --green: #7b2cbf; --gold: #ffcc33;
+  --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cg transform='rotate(-15 30 30)'%3E%3Crect x='10' y='20' width='40' height='22' rx='3' fill='%232fbf71'/%3E%3Ccircle cx='30' cy='31' r='6' fill='%23bff0d6'/%3E%3C/g%3E%3Cg transform='rotate(20 85 85)'%3E%3Crect x='65' y='74' width='40' height='22' rx='3' fill='%23ff8fab'/%3E%3Ccircle cx='85' cy='85' r='6' fill='%23ffe0e9'/%3E%3C/g%3E%3C/svg%3E");
+  --pattern-op: .3;
+}
+html[data-theme="bobble"] .bill:not(.warn):not(.bad) { background: radial-gradient(circle at 85% 120%, rgba(255, 204, 51, .3) 0 70px, transparent 71px), linear-gradient(135deg, #9d4edd, #5a189a); }
+
+/* ===== Bobble Thần tài: đỏ son, xu vàng lỗ vuông ===== */
+html[data-theme="thantai"] {
+  --paper: #fff0d6; --card: #fffaf0; --text: #6b1010; --muted: #a8553f; --stroke: #4a0d0d; --line: #f3d3a8;
+  --green: #c1121f; --gold: #ffcc33;
+  --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Ccircle cx='25' cy='25' r='12' fill='%23f2b705'/%3E%3Crect x='20' y='20' width='10' height='10' fill='%23fff0d6'/%3E%3Ccircle cx='75' cy='75' r='9' fill='%23f2b705'/%3E%3Crect x='71' y='71' width='8' height='8' fill='%23fff0d6'/%3E%3C/svg%3E");
+  --pattern-op: .35;
+}
+html[data-theme="thantai"] .bill:not(.warn):not(.bad) { background: radial-gradient(circle at 85% 120%, rgba(255, 204, 51, .3) 0 70px, transparent 71px), linear-gradient(135deg, #d00000, #8a0b0b); }
+html[data-theme="thantai"] .bill:not(.warn):not(.bad) .bill-amt { color: #ffe066; }
+
+/* ===== Tết: đỏ đào, vàng mai ===== */
+html[data-theme="tet"] {
+  --paper: #ffe9d6; --card: #fffaf2; --text: #6b1010; --muted: #a8553f; --stroke: #4a0d0d; --line: #f5cdb5;
+  --green: #d62828; --gold: #ffd21f;
+  --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='110' height='110'%3E%3Cg fill='%23ffb703'%3E%3Ccircle cx='22' cy='16' r='6'/%3E%3Ccircle cx='30' cy='22' r='6'/%3E%3Ccircle cx='27' cy='31' r='6'/%3E%3Ccircle cx='17' cy='31' r='6'/%3E%3Ccircle cx='14' cy='22' r='6'/%3E%3C/g%3E%3Cg fill='%23ff8fa3'%3E%3Ccircle cx='80' cy='74' r='6'/%3E%3Ccircle cx='88' cy='80' r='6'/%3E%3Ccircle cx='85' cy='89' r='6'/%3E%3Ccircle cx='75' cy='89' r='6'/%3E%3Ccircle cx='72' cy='80' r='6'/%3E%3C/g%3E%3C/svg%3E");
+  --pattern-op: .35;
+}
+html[data-theme="tet"] .bill:not(.warn):not(.bad) { background: radial-gradient(circle at 85% 120%, rgba(255, 210, 31, .3) 0 70px, transparent 71px), linear-gradient(135deg, #e53935, #a31515); }
+html[data-theme="tet"] .bill::before { border-color: rgba(255, 210, 31, .8); }
+html[data-theme="tet"] .bill:not(.warn):not(.bad) .bill-amt { color: #ffe066; }
+
+/* ===== Năm mới: đêm xanh tím, pháo hoa ===== */
+html[data-theme="newyear"] {
+  --paper: #101a3a; --card: #1a2650; --text: #fff4d6; --muted: #aab4e0; --stroke: #050816; --line: #2c3a72;
+  --green: #7b5cff; --gold: #ffcc33;
+  --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cpath d='M20 10 l3 7 l7 3 l-7 3 l-3 7 l-3 -7 l-7 -3 l7 -3 Z' fill='%23ffcc33'/%3E%3Crect x='70' y='60' width='8' height='4' fill='%23ff6fa8' transform='rotate(30 74 62)'/%3E%3Crect x='40' y='80' width='8' height='4' fill='%236ee7ff' transform='rotate(-20 44 82)'/%3E%3Ccircle cx='80' cy='20' r='2' fill='%23fff'/%3E%3C/svg%3E");
+  --pattern-op: .5;
+}
+html[data-theme="newyear"] .bill:not(.warn):not(.bad) { background: radial-gradient(circle at 85% 120%, rgba(255, 204, 51, .25) 0 70px, transparent 71px), linear-gradient(135deg, #3a2a8a, #12163a); }
+html[data-theme="newyear"] .bill:not(.warn):not(.bad) .bill-amt { color: #ffd95a; }
+
+/* ===== Halloween: tím đen, cam bí ngô ===== */
+html[data-theme="halloween"] {
+  --paper: #1d1528; --card: #2a1f3a; --text: #ffe0b8; --muted: #c2a6d6; --stroke: #07040c; --line: #46365e;
+  --green: #ff7a1a; --gold: #ffcf3f;
+  --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cpath d='M30 30 C22 22 12 24 8 28 C12 28 15 31 16 34 C20 31 25 32 30 34 C35 32 40 31 44 34 C45 31 48 28 52 28 C48 24 38 22 30 30 Z' fill='%23a678ff'/%3E%3Ccircle cx='86' cy='86' r='9' fill='%23ff7a1a'/%3E%3Crect x='84' y='74' width='4' height='6' fill='%235cc97a'/%3E%3C/svg%3E");
+  --pattern-op: .35;
+}
+html[data-theme="halloween"] .bill:not(.warn):not(.bad) { background: radial-gradient(circle at 85% 120%, rgba(255, 122, 26, .3) 0 70px, transparent 71px), linear-gradient(135deg, #5b2a86, #1d1528); }
+html[data-theme="halloween"] .bill:not(.warn):not(.bad) .bill-amt { color: #ffb84d; }
+
+/* ===== Trung thu: đêm trăng, cam đèn lồng ===== */
+html[data-theme="trungthu"] {
+  --paper: #10213f; --card: #1b3360; --text: #fff1c9; --muted: #b9c7e6; --stroke: #050c1c; --line: #2e4c82;
+  --green: #ff9d2e; --gold: #ffd36e;
+  --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='110' height='110'%3E%3Cpath d='M20 8 l4 10 l10 1 l-8 6 l3 10 l-9 -6 l-9 6 l3 -10 l-8 -6 l10 -1 Z' fill='%23ff5a5f'/%3E%3Ccircle cx='80' cy='80' r='3' fill='%23fff1b8'/%3E%3Ccircle cx='60' cy='30' r='2' fill='%23fff1b8'/%3E%3C/svg%3E");
+  --pattern-op: .4;
+}
+html[data-theme="trungthu"] .bill:not(.warn):not(.bad) { background: radial-gradient(circle at 88% 20%, #fff1b8 0 34px, rgba(255, 226, 122, .35) 35px 60px, transparent 61px), linear-gradient(135deg, #1f4b8f, #0d1b38); }
+
+/* ===== Noel: tuyết trắng, xanh lá & đỏ ===== */
+html[data-theme="noel"] {
+  --paper: #e8f4f8; --card: #ffffff; --text: #12372a; --muted: #4f7a69; --stroke: #12372a; --line: #cfe6ee;
+  --green: #c62828; --gold: #ffd36e;
+  --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cg stroke='%2390bfd6' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M25 12 v26 M12 25 h26 M16 16 l18 18 M34 16 l-18 18'/%3E%3Cpath d='M75 64 v18 M66 73 h18 M69 67 l12 12 M81 67 l-12 12'/%3E%3C/g%3E%3C/svg%3E");
+  --pattern-op: .55;
+}
+html[data-theme="noel"] .bill:not(.warn):not(.bad) { background: radial-gradient(circle at 85% 120%, rgba(255, 255, 255, .25) 0 70px, transparent 71px), linear-gradient(135deg, #1b7f4b, #0f5132); }
+
+/* ===== Trơn ===== */
+html[data-theme="tron"] { --pattern: none; }
+
+/* Ô chọn kiểu trong Cài đặt */
+.themes { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+.theme-tile {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 2px; text-align: left; cursor: pointer;
+  background: var(--sw); color: #2a1f14; border: var(--bw) solid var(--stroke); border-radius: 16px;
+  box-shadow: var(--sh-sm); padding: 8px 10px 10px; font: inherit; transition: transform .12s;
+}
+.theme-tile .thumbs { display: flex; justify-content: space-between; width: 100%; height: 64px; align-items: flex-end; }
+.theme-tile .thumbs img { height: 64px; }
+.theme-tile .ti { font-size: 40px; line-height: 64px; }
+.theme-tile b { font: 800 16px var(--font-head); }
+.theme-tile small { font-size: 11px; font-weight: 700; opacity: .8; line-height: 1.25; }
+.theme-tile[data-pick="daigia"], .theme-tile[data-pick="newyear"], .theme-tile[data-pick="halloween"], .theme-tile[data-pick="trungthu"] { color: #fff1c9; }
+.theme-tile.on { outline: 4px solid var(--gold); outline-offset: 2px; transform: rotate(-1.5deg); }
+.theme-tile:active { transform: scale(.96); }
+

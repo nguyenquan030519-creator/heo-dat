@@ -1,0 +1,36 @@
+/* Chỉ transform/opacity, mỗi lượt 2.4s, không hiệu ứng filter/blur hoặc vòng lặp. */
+.scene-actor { transform-origin: 50% 94%; }
+.scene-actor .actor-face { opacity: 0; }
+.scene-actor .actor-base, .scene-actor .actor-face { transition: opacity 160ms ease; }
+.scene-actor.face-on .actor-face { opacity: 1; }
+.scene-actor.face-on .actor-base { opacity: 0; }
+.scene-actor.perform { animation-duration: 2100ms; animation-delay: var(--actor-delay, 0ms); animation-timing-function: ease-in-out; }
+[data-move="ooo"].perform { animation-name: act-ooo; }
+[data-move="smolder"].perform { animation-name: act-smolder; }
+[data-move="chuckle"].perform { animation-name: act-chuckle; }
+[data-move="panic"].perform { animation-name: act-panic; }
+[data-move="recoil"].perform { animation-name: act-recoil; }
+[data-move="agent"].perform { animation-name: act-agent; }
+[data-move="float"].perform { animation-name: act-float; }
+[data-move="greet"].perform { animation-name: act-greet; }
+[data-move="hop"].perform { animation-name: act-hop; }
+@keyframes act-ooo { 0%,100%{transform:none} 22%{transform:translateY(-7px) rotate(-3deg)} 45%,72%{transform:rotate(2deg) scale(1.025)} }
+@keyframes act-smolder { 0%,100%{transform:none} 30%,75%{transform:rotate(-3deg) scale(1.04)} }
+@keyframes act-chuckle { 0%,100%{transform:none} 18%,38%,58%{transform:translateY(-5px) rotate(2deg)} 28%,48%,68%{transform:rotate(-2deg)} }
+@keyframes act-panic { 0%,100%{transform:none} 15%{transform:translateY(-12px) rotate(5deg)} 30%,50%{transform:rotate(-4deg)} 40%,60%{transform:rotate(4deg)} }
+@keyframes act-recoil { 0%,100%{transform:none} 20%,55%{transform:translateX(12px) rotate(7deg)} 70%{transform:translateX(4px) rotate(-2deg)} }
+@keyframes act-agent { 0%,100%{transform:none} 25%,65%{transform:rotate(3deg) translateY(-4px)} 80%{transform:rotate(-1deg)} }
+@keyframes act-float { 0%,100%{transform:none} 45%{transform:translateY(-15px) rotate(-5deg)} 72%{transform:translateY(-7px) rotate(3deg)} }
+@keyframes act-greet { 0%,100%{transform:none} 20%,55%{transform:rotate(-5deg)} 35%,70%{transform:rotate(5deg)} }
+@keyframes act-hop { 0%,100%{transform:none} 25%{transform:translateY(-12px) rotate(-2deg)} 50%{transform:translateY(0)} 65%{transform:translateY(-5px) rotate(2deg)} }
+/* Ánh scanner nhỏ ngay nhân vật, không nháy toàn màn hình. */
+[data-move="agent"]::after { content: ''; position: absolute; left: 30%; top: 49%; width: 18%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle,#e2fcff 0 7%,#78d7ea80 15%,transparent 68%); opacity: 0; }
+[data-move="agent"].perform::after { animation: act-scan 2.1s ease-in-out; }
+@keyframes act-scan { 25%,50%{opacity:.85;transform:scale(1.5)} 0%,70%,100%{opacity:0;transform:scale(.6)} }
+.motion-off .scene-actor, .motion-off .scene-actor::after { animation: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  .scene-actor, .scene-actor::after { animation: none !important; }
+  .scene-actor img { transition: none; }
+  .scene-actor .actor-face { display: none; }
+  .scene-actor .actor-base { opacity: 1 !important; }
+}

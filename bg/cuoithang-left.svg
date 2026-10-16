@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500">
+<!-- CUỐI THÁNG – Ví khóc hu hu, bướm đêm bay ra (bên trái) -->
+<style>
+.k{stroke:#2b3038;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+.moth{animation:fly 5s linear infinite;opacity:0}
+.m2{animation-delay:1.7s}.m3{animation-delay:3.4s}
+@keyframes fly{0%{transform:translate(150px,230px) scale(.4);opacity:0}10%{opacity:1}50%{transform:translate(110px,110px) scale(1)}100%{transform:translate(190px,-20px) scale(1);opacity:0}}
+.wing{animation:flap .18s ease-in-out infinite alternate;transform-box:fill-box}
+.wl{transform-origin:right center}.wr{transform-origin:left center}
+@keyframes flap{to{transform:scaleX(.35)}}
+.tear{animation:tear 1.2s ease-in infinite}
+@keyframes tear{0%{transform:translateY(0);opacity:1}100%{transform:translateY(60px);opacity:0}}
+.sob{animation:sob .5s ease-in-out infinite alternate;transform-origin:150px 440px}
+@keyframes sob{to{transform:scale(1.02,.97)}}
+</style>
+<!-- bướm đêm -->
+<g id="m"><g class="moth"><ellipse class="wing wl k" fill="#d6cfc2" cx="-12" cy="0" rx="13" ry="9" style="stroke-width:3"/><ellipse class="wing wr k" fill="#d6cfc2" cx="12" cy="0" rx="13" ry="9" style="stroke-width:3"/><ellipse fill="#2b3038" cx="0" cy="0" rx="4" ry="9"/></g></g>
+<g class="moth m2"><ellipse class="wing wl k" fill="#c9c1b3" cx="-10" cy="0" rx="11" ry="8" style="stroke-width:3"/><ellipse class="wing wr k" fill="#c9c1b3" cx="10" cy="0" rx="11" ry="8" style="stroke-width:3"/><ellipse fill="#2b3038" cx="0" cy="0" rx="3.5" ry="8"/></g>
+<g class="moth m3"><ellipse class="wing wl k" fill="#d6cfc2" cx="-12" cy="0" rx="13" ry="9" style="stroke-width:3"/><ellipse class="wing wr k" fill="#d6cfc2" cx="12" cy="0" rx="13" ry="9" style="stroke-width:3"/><ellipse fill="#2b3038" cx="0" cy="0" rx="4" ry="9"/></g>
+<g class="sob">
+  <!-- nắp ví mở & lòng ví trống -->
+  <path class="k" fill="#7d5234" d="M48 290 L64 206 L252 206 L252 290 Z"/>
+  <rect fill="#3b2516" x="66" y="214" width="176" height="70" rx="8"/>
+  <!-- tờ hoá đơn 0đ -->
+  <g transform="rotate(12 180 220)">
+    <path class="k" fill="#fff" d="M150 150 l10 -8 l10 8 l10 -8 l10 8 l10 -8 l10 8 L210 270 L150 270 Z" style="stroke-width:4"/>
+    <text x="180" y="200" font-family="Arial Black,Arial" font-weight="900" font-size="24" text-anchor="middle" fill="#ef4b4b">0đ</text>
+    <path d="M160 220 h40 M160 236 h30" stroke="#b8c0c8" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <!-- thân ví -->
+  <rect class="k" fill="#9a6a44" x="40" y="270" width="220" height="176" rx="26"/>
+  <rect fill="none" stroke="#e8c9a0" stroke-width="3" stroke-dasharray="8 6" x="54" y="284" width="192" height="148" rx="18"/>
+  <rect class="k" fill="#7d5234" x="214" y="330" width="46" height="44" rx="10" style="stroke-width:5"/>
+  <circle cx="236" cy="352" r="7" fill="#e8c9a0" stroke="#2b3038" stroke-width="3"/>
+  <!-- mặt khóc -->
+  <path class="k" fill="none" d="M84 344 Q100 330 116 344"/>
+  <path class="k" fill="none" d="M150 344 Q166 330 182 344"/>
+  <path class="k" d="M84 322 L114 330 M182 322 L152 330" style="stroke-width:5"/>
+  <path fill="#6cc4ff" stroke="#2b3038" stroke-width="4" d="M90 346 C86 380 82 404 90 430 L106 430 C110 404 108 380 108 346 Z"/>
+  <path fill="#6cc4ff" stroke="#2b3038" stroke-width="4" d="M156 346 C152 380 148 404 156 430 L172 430 C176 404 174 380 174 346 Z"/>
+  <ellipse class="k" fill="#5a1f1f" cx="133" cy="396" rx="22" ry="17"/>
+  <ellipse fill="#ff7a8a" cx="133" cy="404" rx="12" ry="6"/>
+  <circle class="tear" cx="94" cy="440" r="6" fill="#6cc4ff" stroke="#2b3038" stroke-width="2"/>
+  <circle class="tear" style="animation-delay:.6s" cx="170" cy="440" r="6" fill="#6cc4ff" stroke="#2b3038" stroke-width="2"/>
+</g>
+</svg>

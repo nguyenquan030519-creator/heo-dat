@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500">
+<!-- CUỐI THÁNG – Ly mì tôm cười gượng (bên phải) -->
+<style>
+.k{stroke:#2b3038;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+.st{animation:st 3s ease-out infinite;opacity:0}
+.s2{animation-delay:1s}.s3{animation-delay:2s}
+@keyframes st{0%{transform:translateY(20px);opacity:0}30%{opacity:.9}100%{transform:translateY(-90px);opacity:0}}
+.sweat{animation:sw 1.6s ease-in infinite}
+@keyframes sw{0%{transform:translateY(0);opacity:1}100%{transform:translateY(34px);opacity:0}}
+.wig{animation:wig 2.2s ease-in-out infinite;transform-origin:150px 480px}
+@keyframes wig{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+</style>
+<g fill="none" stroke="#9aa6b2" stroke-width="7" stroke-linecap="round">
+  <path class="st" d="M110 250 c-14 -20 14 -30 0 -50"/>
+  <path class="st s2" d="M150 244 c-14 -20 14 -30 0 -50"/>
+  <path class="st s3" d="M190 250 c-14 -20 14 -30 0 -50"/>
+</g>
+<g class="wig">
+  <!-- đũa -->
+  <path class="k" d="M96 196 L176 326" style="stroke-width:12"/>
+  <path d="M96 196 L176 326" stroke="#c98b4b" stroke-width="6" stroke-linecap="round"/>
+  <path class="k" d="M122 186 L186 322" style="stroke-width:12"/>
+  <path d="M122 186 L186 322" stroke="#c98b4b" stroke-width="6" stroke-linecap="round"/>
+  <!-- sợi mì -->
+  <path class="k" fill="#ffd36e" d="M80 304 q10 -26 20 -4 q10 -26 20 -4 q10 -26 20 -4 q10 -26 20 -4 q10 -26 20 -4 q10 -26 20 -4 q10 -26 20 -4 L222 314 L80 314 Z" style="stroke-width:5"/>
+  <!-- nắp bóc dở -->
+  <path class="k" fill="#e9edf1" d="M214 300 C236 252 278 252 268 296 Z"/>
+  <!-- ly -->
+  <path class="k" fill="#fff" d="M74 302 L226 302 L208 480 L92 480 Z"/>
+  <path class="k" fill="#ef4b4b" d="M79 334 L221 334 L214 400 L86 400 Z"/>
+  <text x="150" y="372" font-family="Arial Black,Arial" font-weight="900" font-size="30" text-anchor="middle" fill="#fff">MÌ TÔM</text>
+  <text x="150" y="392" font-family="Arial,sans-serif" font-weight="700" font-size="13" text-anchor="middle" fill="#ffe08a">vị cuối tháng</text>
+  <!-- mặt cười gượng -->
+  <path class="k" fill="none" d="M112 432 l10 -10 l10 10"/>
+  <path class="k" fill="none" d="M168 432 l10 -10 l10 10"/>
+  <ellipse cx="108" cy="448" rx="10" ry="6" fill="#ff9aa8" opacity=".7"/>
+  <ellipse cx="192" cy="448" rx="10" ry="6" fill="#ff9aa8" opacity=".7"/>
+  <path class="k" fill="none" d="M130 454 q7 -6 13 0 t13 0 t13 0" style="stroke-width:4"/>
+  <path class="sweat" fill="#6cc4ff" stroke="#2b3038" stroke-width="3" d="M204 410 C196 424 196 432 204 434 C212 432 212 424 204 410 Z"/>
+</g>
+</svg>

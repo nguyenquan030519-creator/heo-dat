@@ -1,0 +1,20 @@
+/* MÀN HÌNH CÀI ĐẶT – thẻ chào, nơi lưu dữ liệu, công tắc, dòng thêm chi cố định */
+
+.welcome { display: flex; gap: 12px; align-items: center; background: var(--gold); color: #2a1f14; }
+.welcome .pig-sm { font-size: 44px; animation: bob 2.6s ease-in-out infinite; }
+
+.store-status { display: flex; gap: 12px; align-items: flex-start; }
+.store-status .big { font-size: 32px; line-height: 1; }
+.btns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.btns .btn { flex: 1 1 140px; }
+
+.fx-row { margin-top: 12px; }
+.fx-row .fx-amt { flex: 0 0 108px; }
+.fx-row .btn { flex: 0 0 50px; padding: 0; font-size: 22px; min-height: 50px; }
+
+/* Công tắc bật/tắt */
+.switch { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 0; color: var(--text); font-size: 16px; cursor: pointer; }
+.switch input { appearance: none; -webkit-appearance: none; flex: none; width: 60px; height: 34px; min-height: 0; padding: 0; border-radius: 999px; position: relative; cursor: pointer; background: var(--paper); }
+.switch input::after { content: ""; position: absolute; top: 4px; left: 4px; width: 20px; height: 20px; border-radius: 50%; background: var(--stroke); transition: left .18s cubic-bezier(.3, 1.6, .5, 1); }
+.switch input:checked { background: var(--green); }
+.switch input:checked::after { left: 30px; background: #fff; box-shadow: 0 0 0 2px var(--stroke); }

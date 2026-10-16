@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500">
+<!-- BOBBLE THẦN TÀI – Cóc ngậm xu đầu lò xo, ngồi trên đống tiền (bên phải) -->
+<style>
+.k{stroke:#1e3a14;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+.head{animation:bob 1.7s ease-in-out infinite;transform-origin:150px 340px}
+@keyframes bob{0%,100%{transform:rotate(0)}12%{transform:rotate(-10deg) translateY(-5px)}26%{transform:rotate(8deg)}40%{transform:rotate(-5deg)}55%{transform:rotate(3deg)}70%{transform:rotate(-1deg)}}
+.spin{animation:spin 1.6s linear infinite;transform-box:fill-box;transform-origin:center}
+@keyframes spin{0%,100%{transform:scaleX(1)}50%{transform:scaleX(.15)}}
+.eye{animation:eye 3s infinite;transform-box:fill-box;transform-origin:center}
+@keyframes eye{0%,88%,100%{transform:scaleY(1)}93%{transform:scaleY(.1)}}
+.tw{animation:tw 1.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.t2{animation-delay:.5s}
+@keyframes tw{0%,100%{transform:scale(.4);opacity:.3}50%{transform:scale(1.1);opacity:1}}
+</style>
+<!-- bệ vàng -->
+<rect class="k" fill="#ffcc33" x="62" y="448" width="176" height="44" rx="10" style="stroke:#4a0d0d"/>
+<ellipse class="k" fill="#ffe27a" cx="150" cy="448" rx="88" ry="14" style="stroke:#4a0d0d"/>
+<text x="150" y="482" font-family="Arial Black,Arial" font-weight="900" font-size="22" text-anchor="middle" fill="#c1121f">LỘC</text>
+<!-- đống xu -->
+<g fill="#ffcc33" stroke="#4a0d0d" stroke-width="4">
+  <ellipse cx="96" cy="436" rx="26" ry="9"/><ellipse cx="96" cy="426" rx="26" ry="9"/>
+  <ellipse cx="206" cy="436" rx="26" ry="9"/><ellipse cx="206" cy="426" rx="26" ry="9"/><ellipse cx="206" cy="416" rx="26" ry="9"/>
+</g>
+<!-- thân cóc -->
+<ellipse class="k" fill="#4caf50" cx="150" cy="400" rx="76" ry="50"/>
+<ellipse fill="#c5e8a5" cx="150" cy="414" rx="44" ry="30"/>
+<g fill="#2e7d32"><circle cx="96" cy="380" r="7"/><circle cx="204" cy="376" r="8"/><circle cx="188" cy="400" r="5"/></g>
+<path class="k" fill="#4caf50" d="M84 420 C64 430 60 446 76 448 L108 446 Z"/>
+<path class="k" fill="#4caf50" d="M216 420 C236 430 240 446 224 448 L192 446 Z"/>
+<path d="M150 352 l-10 -5 l20 -5 l-20 -5 l20 -5 l-10 -5" stroke="#9aa0a6" stroke-width="5" fill="none" stroke-linejoin="round"/>
+<!-- đầu to -->
+<g class="head">
+  <circle class="k" fill="#4caf50" cx="88" cy="150" r="44"/>
+  <circle class="k" fill="#4caf50" cx="212" cy="150" r="44"/>
+  <ellipse class="k" fill="#4caf50" cx="150" cy="236" rx="132" ry="96"/>
+  <g class="eye"><circle class="k" fill="#fff" cx="88" cy="146" r="28"/><circle class="k" fill="#fff" cx="212" cy="146" r="28"/>
+    <circle fill="#1e3a14" cx="94" cy="150" r="13"/><circle fill="#1e3a14" cx="206" cy="150" r="13"/>
+    <circle fill="#fff" cx="90" cy="145" r="5"/><circle fill="#fff" cx="202" cy="145" r="5"/></g>
+  <g fill="#2e7d32"><circle cx="150" cy="176" r="9"/><circle cx="60" cy="230" r="7"/><circle cx="246" cy="222" r="9"/><circle cx="118" cy="190" r="5"/></g>
+  <ellipse cx="66" cy="262" rx="20" ry="11" fill="#ff9aa8" opacity=".75"/><ellipse cx="234" cy="262" rx="20" ry="11" fill="#ff9aa8" opacity=".75"/>
+  <path class="k" fill="none" d="M46 262 Q150 330 254 262"/>
+  <!-- đồng xu trong miệng -->
+  <g class="spin"><circle cx="150" cy="292" r="30" fill="#ffcc33" stroke="#4a0d0d" stroke-width="5"/><rect x="140" y="282" width="20" height="20" fill="#c1121f" stroke="#4a0d0d" stroke-width="3"/></g>
+</g>
+<g fill="#fff6b0" stroke="#4a0d0d" stroke-width="2.5" stroke-linejoin="round">
+  <path class="tw" transform="translate(40 110)" d="M0 -12 L4 -4 L12 0 L4 4 L0 12 L-4 4 L-12 0 L-4 -4 Z"/>
+  <path class="tw t2" transform="translate(268 330)" d="M0 -10 L3 -3 L10 0 L3 3 L0 10 L-3 3 L-10 0 L-3 -3 Z"/>
+</g>
+</svg>

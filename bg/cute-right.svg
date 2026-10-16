@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500">
+<!-- CUTE – Heo Hồng ống tiết kiệm (bên phải), đồng xu rơi vào khe -->
+<style>
+.k{stroke:#5a2a45;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+.drop{animation:drop 2.6s cubic-bezier(.5,0,.8,.4) infinite}
+@keyframes drop{0%{transform:translateY(-70px);opacity:0}15%{opacity:1}70%{transform:translateY(52px);opacity:1}80%,100%{transform:translateY(60px);opacity:0}}
+.wob{animation:wob 2.6s ease-in-out infinite;transform-origin:150px 480px}
+@keyframes wob{0%,70%,100%{transform:scale(1)}78%{transform:scale(1.05,.95)}86%{transform:scale(.98,1.03)}}
+.tw{animation:tw 1.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.t2{animation-delay:.6s}
+@keyframes tw{0%,100%{transform:scale(.5) rotate(0);opacity:.4}50%{transform:scale(1.1) rotate(20deg);opacity:1}}
+</style>
+<g class="drop"><circle class="k" fill="#ffd36e" cx="150" cy="250" r="20" style="stroke-width:5"/><text x="150" y="258" font-family="Arial Black,Arial" font-weight="900" font-size="22" text-anchor="middle" fill="#5a2a45">₫</text></g>
+<g class="wob">
+  <rect class="k" fill="#ff9cc0" x="86" y="440" width="30" height="48" rx="12"/>
+  <rect class="k" fill="#ff9cc0" x="190" y="440" width="30" height="48" rx="12"/>
+  <path class="k" fill="none" d="M260 380 c22 -12 26 18 8 16 c-12 -2 -2 -20 14 -12"/>
+  <path class="k" fill="#ff9cc0" d="M92 322 L98 268 L134 304 Z"/>
+  <path class="k" fill="#ff9cc0" d="M210 320 L206 266 L170 302 Z"/>
+  <ellipse class="k" fill="#ffb6d0" cx="156" cy="392" rx="110" ry="86"/>
+  <rect fill="#5a2a45" x="124" y="308" width="56" height="11" rx="5"/>
+  <ellipse class="k" fill="#ff9cc0" cx="52" cy="400" rx="26" ry="30"/>
+  <ellipse fill="#5a2a45" cx="46" cy="392" rx="4" ry="7"/><ellipse fill="#5a2a45" cx="58" cy="408" rx="4" ry="7"/>
+  <ellipse fill="#3a1f2e" cx="98" cy="370" rx="9" ry="12"/><ellipse fill="#3a1f2e" cx="140" cy="366" rx="9" ry="12"/>
+  <circle cx="95" cy="365" r="3.5" fill="#fff"/><circle cx="137" cy="361" r="3.5" fill="#fff"/>
+  <ellipse cx="88" cy="414" rx="16" ry="9" fill="#ff7aa8" opacity=".7"/>
+  <path class="k" fill="none" d="M104 412 Q116 422 128 412" style="stroke-width:4"/>
+  <path fill="#ff4d8d" stroke="#5a2a45" stroke-width="3" transform="translate(200 410) scale(2.4)" d="M0 6 C-12 -6 -6 -16 0 -8 C6 -16 12 -6 0 6 Z"/>
+</g>
+<g fill="#fff4b0" stroke="#5a2a45" stroke-width="3" stroke-linejoin="round">
+  <path class="tw" transform="translate(250 230)" d="M0 -14 L4 -4 L14 0 L4 4 L0 14 L-4 4 L-14 0 L-4 -4 Z"/>
+  <path class="tw t2" transform="translate(56 260)" d="M0 -10 L3 -3 L10 0 L3 3 L0 10 L-3 3 L-10 0 L-3 -3 Z"/>
+</g>
+</svg>

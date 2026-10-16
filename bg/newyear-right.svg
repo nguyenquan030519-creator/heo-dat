@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500">
+<!-- NĂM MỚI – Đồng hồ báo thức đội mũ tiệc, pháo hoa (bên phải) -->
+<style>
+.k{stroke:#0b0f24;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+.fw{animation:fw 2.4s ease-out infinite;transform-box:fill-box;transform-origin:center;opacity:0}
+.f2{animation-delay:.8s}.f3{animation-delay:1.6s}
+@keyframes fw{0%{transform:scale(.1);opacity:0}15%{opacity:1}80%{transform:scale(1);opacity:1}100%{transform:scale(1.1);opacity:0}}
+.ring{animation:ring .25s linear infinite alternate;transform-origin:150px 330px}
+@keyframes ring{from{transform:rotate(-3deg)}to{transform:rotate(3deg)}}
+.hand{animation:hand 6s linear infinite;transform-origin:150px 330px}
+@keyframes hand{to{transform:rotate(360deg)}}
+</style>
+<g class="fw" stroke-width="5" stroke-linecap="round" stroke="#ffcc33"><path d="M70 90 v-34 M70 90 v34 M70 90 h-34 M70 90 h34 M70 90 l-24 -24 M70 90 l24 24 M70 90 l24 -24 M70 90 l-24 24"/></g>
+<g class="fw f2" stroke-width="5" stroke-linecap="round" stroke="#ff6fa8"><path d="M230 70 v-28 M230 70 v28 M230 70 h-28 M230 70 h28 M230 70 l-20 -20 M230 70 l20 20 M230 70 l20 -20 M230 70 l-20 20"/></g>
+<g class="fw f3" stroke-width="5" stroke-linecap="round" stroke="#6ee7ff"><path d="M150 40 v-24 M150 40 v24 M150 40 h-24 M150 40 h24 M150 40 l-17 -17 M150 40 l17 17 M150 40 l17 -17 M150 40 l-17 17"/></g>
+<g class="ring">
+  <path class="k" fill="#ffcc33" d="M74 238 a40 40 0 0 1 62 -22 Z"/>
+  <path class="k" fill="#ffcc33" d="M226 238 a40 40 0 0 0 -62 -22 Z"/>
+  <path class="k" fill="none" d="M100 446 L82 484 M200 446 L218 484"/>
+  <circle class="k" fill="#ff5a5f" cx="150" cy="330" r="112"/>
+  <circle class="k" fill="#fffaf0" cx="150" cy="330" r="88"/>
+  <g font-family="Arial Black,Arial" font-weight="900" font-size="22" fill="#0b0f24" text-anchor="middle">
+    <text x="150" y="268">12</text><text x="218" y="338">3</text><text x="150" y="406">6</text><text x="82" y="338">9</text>
+  </g>
+  <path class="k" d="M150 330 L150 262" style="stroke-width:7"/>
+  <path class="k hand" d="M150 330 L196 330" style="stroke-width:4;stroke:#e32b2b"/>
+  <circle cx="150" cy="330" r="7" fill="#0b0f24"/>
+  <ellipse fill="#0b0f24" cx="120" cy="300" rx="7" ry="10"/><ellipse fill="#0b0f24" cx="180" cy="300" rx="7" ry="10"/>
+  <path class="k" fill="none" d="M128 366 Q150 384 172 366" style="stroke-width:5"/>
+  <!-- mũ tiệc -->
+  <path class="k" fill="#7b5cff" d="M110 226 L150 120 L190 226 Z"/>
+  <path d="M122 196 L178 196 M134 166 L166 166" stroke="#ffcc33" stroke-width="8"/>
+  <circle class="k" fill="#ffcc33" cx="150" cy="118" r="12" style="stroke-width:4"/>
+</g>
+</svg>

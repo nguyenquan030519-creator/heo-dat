@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500">
+<!-- NĂM MỚI – Chai sâm-panh bật nút, bọt bay (bên trái) -->
+<style>
+.k{stroke:#0b0f24;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+.cork{animation:cork 2.8s cubic-bezier(.2,.8,.3,1) infinite}
+@keyframes cork{0%,30%{transform:translate(0,0) rotate(0)}70%{transform:translate(70px,-170px) rotate(260deg);opacity:1}71%,100%{opacity:0}}
+.bub{animation:bub 2.8s ease-out infinite;opacity:0}
+.b2{animation-delay:.3s}.b3{animation-delay:.6s}.b4{animation-delay:.9s}
+@keyframes bub{0%,28%{transform:translate(0,0);opacity:0}35%{opacity:1}100%{transform:translate(var(--x),-150px);opacity:0}}
+.shake{animation:shk 2.8s ease-in-out infinite;transform-origin:150px 480px}
+@keyframes shk{0%,20%{transform:rotate(0)}24%{transform:rotate(-4deg)}28%{transform:rotate(4deg)}32%,100%{transform:rotate(-8deg)}}
+</style>
+<g class="shake">
+  <g fill="#fff6c8" stroke="#0b0f24" stroke-width="2.5">
+    <circle class="bub" style="--x:-30px" cx="150" cy="150" r="8"/><circle class="bub b2" style="--x:24px" cx="150" cy="150" r="6"/>
+    <circle class="bub b3" style="--x:-8px" cx="150" cy="150" r="9"/><circle class="bub b4" style="--x:40px" cx="150" cy="150" r="5"/>
+  </g>
+  <g class="cork"><rect class="k" fill="#d9a066" x="134" y="128" width="32" height="30" rx="8"/></g>
+  <path class="k" fill="#1f5c3a" d="M128 160 L172 160 L172 230 C230 250 240 290 240 330 L240 470 C240 480 232 486 222 486 L78 486 C68 486 60 480 60 470 L60 330 C60 290 70 250 128 230 Z"/>
+  <path class="k" fill="#ffcc33" d="M124 156 L176 156 L178 236 C160 244 140 244 122 236 Z"/>
+  <path d="M84 300 C80 340 80 400 86 450" stroke="#3f8f63" stroke-width="12" fill="none" stroke-linecap="round" opacity=".8"/>
+  <rect class="k" fill="#fff8e6" x="78" y="318" width="144" height="128" rx="14"/>
+  <text x="150" y="350" font-family="Arial Black,Arial" font-weight="900" font-size="26" text-anchor="middle" fill="#c9961a">2027</text>
+  <path class="k" fill="none" d="M110 384 q10 -12 20 0 M170 384 q10 -12 20 0" style="stroke-width:5"/>
+  <ellipse cx="104" cy="404" rx="10" ry="6" fill="#ffb3c1"/><ellipse cx="196" cy="404" rx="10" ry="6" fill="#ffb3c1"/>
+  <path class="k" fill="#7a1f2b" d="M134 400 Q150 426 166 400 Z" style="stroke-width:4"/>
+</g>
+</svg>

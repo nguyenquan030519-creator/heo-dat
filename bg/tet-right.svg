@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500">
+<!-- TẾT – Bánh Chưng khoái chí, dây pháo đung đưa (bên phải) -->
+<style>
+.k{stroke:#2a1f14;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+.swing{animation:swing 2s ease-in-out infinite;transform-origin:250px 40px}
+@keyframes swing{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+.spark{animation:spark .5s steps(2) infinite}
+@keyframes spark{50%{opacity:.2}}
+.jump{animation:jump 2.4s ease-in-out infinite;transform-origin:150px 480px}
+@keyframes jump{0%,60%,100%{transform:translateY(0) scale(1)}70%{transform:translateY(4px) scale(1.04,.95)}80%{transform:translateY(-14px)}}
+</style>
+<!-- dây pháo -->
+<g class="swing">
+  <path d="M250 40 L250 230" stroke="#2a1f14" stroke-width="4"/>
+  <g class="k" fill="#e32b2b" style="stroke-width:4">
+    <rect x="232" y="60" width="16" height="34" rx="4" transform="rotate(-25 240 77)"/><rect x="252" y="60" width="16" height="34" rx="4" transform="rotate(25 260 77)"/>
+    <rect x="232" y="104" width="16" height="34" rx="4" transform="rotate(-25 240 121)"/><rect x="252" y="104" width="16" height="34" rx="4" transform="rotate(25 260 121)"/>
+    <rect x="232" y="148" width="16" height="34" rx="4" transform="rotate(-25 240 165)"/><rect x="252" y="148" width="16" height="34" rx="4" transform="rotate(25 260 165)"/>
+  </g>
+  <g class="spark" fill="#ffd21f"><circle cx="250" cy="236" r="7"/><circle cx="240" cy="246" r="4"/><circle cx="262" cy="244" r="4"/></g>
+</g>
+<g class="jump">
+  <rect class="k" fill="#3f8f3a" x="46" y="268" width="208" height="208" rx="16"/>
+  <rect fill="#5cae4f" x="60" y="282" width="180" height="180" rx="10" opacity=".55"/>
+  <path d="M60 330 L240 330 M60 414 L240 414 M110 282 L110 462 M190 282 L190 462" stroke="#e9d3a2" stroke-width="9"/>
+  <path d="M60 330 L240 330 M60 414 L240 414 M110 282 L110 462 M190 282 L190 462" stroke="#2a1f14" stroke-width="2" stroke-opacity=".5"/>
+  <ellipse fill="#1d3b1a" cx="128" cy="368" rx="9" ry="12"/><ellipse fill="#1d3b1a" cx="172" cy="368" rx="9" ry="12"/>
+  <circle cx="125" cy="363" r="3.5" fill="#fff"/><circle cx="169" cy="363" r="3.5" fill="#fff"/>
+  <ellipse cx="96" cy="388" rx="12" ry="7" fill="#ff9aa8" opacity=".8"/><ellipse cx="204" cy="388" rx="12" ry="7" fill="#ff9aa8" opacity=".8"/>
+  <path class="k" fill="#7a1010" d="M134 386 Q150 404 166 386 Z" style="stroke-width:4"/>
+  <path class="k" fill="#ffd21f" d="M216 262 l16 -22 l6 26 Z" style="stroke-width:4"/>
+</g>
+</svg>

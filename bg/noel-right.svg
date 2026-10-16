@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500">
+<!-- NOEL – Heo Tuần Lộc đeo sừng & chuông, ôm hộp quà (bên phải) -->
+<style>
+.k{stroke:#12372a;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+.bell{animation:bell .5s ease-in-out infinite alternate;transform-origin:150px 340px}
+@keyframes bell{from{transform:rotate(-12deg)}to{transform:rotate(12deg)}}
+.hop{animation:hop 2.4s ease-in-out infinite;transform-origin:150px 480px}
+@keyframes hop{0%,60%,100%{transform:translateY(0)}75%{transform:translateY(-14px)}}
+</style>
+<g class="hop">
+  <!-- sừng -->
+  <path class="k" fill="none" d="M110 210 C96 170 70 150 56 120 M86 170 C70 166 56 170 46 180 M100 190 C110 160 108 140 96 124" style="stroke:#8b5a2b;stroke-width:12"/>
+  <path class="k" fill="none" d="M190 210 C204 170 230 150 244 120 M214 170 C230 166 244 170 254 180 M200 190 C190 160 192 140 204 124" style="stroke:#8b5a2b;stroke-width:12"/>
+  <path class="k" fill="#c62828" d="M96 214 Q150 186 204 214" style="stroke-width:10"/>
+  <!-- tai, đầu -->
+  <path class="k" fill="#ff9cc0" d="M80 244 L74 204 L112 226 Z"/>
+  <path class="k" fill="#ff9cc0" d="M220 244 L226 204 L188 226 Z"/>
+  <ellipse class="k" fill="#ffb6d0" cx="150" cy="280" rx="86" ry="74"/>
+  <ellipse fill="#3a1f2e" cx="120" cy="266" rx="8" ry="11"/><ellipse fill="#3a1f2e" cx="180" cy="266" rx="8" ry="11"/>
+  <circle cx="117" cy="261" r="3" fill="#fff"/><circle cx="177" cy="261" r="3" fill="#fff"/>
+  <ellipse class="k" fill="#ff9cc0" cx="150" cy="300" rx="30" ry="22"/>
+  <ellipse fill="#7a2a4a" cx="140" cy="300" rx="5" ry="8"/><ellipse fill="#7a2a4a" cx="160" cy="300" rx="5" ry="8"/>
+  <ellipse cx="96" cy="300" rx="13" ry="7" fill="#ff7aa8" opacity=".7"/><ellipse cx="204" cy="300" rx="13" ry="7" fill="#ff7aa8" opacity=".7"/>
+  <!-- chuông -->
+  <g class="bell"><path class="k" fill="#ffcc33" d="M136 356 C136 336 164 336 164 356 L170 370 L130 370 Z" style="stroke-width:4"/><circle cx="150" cy="374" r="5" fill="#12372a"/></g>
+  <!-- hộp quà -->
+  <rect class="k" fill="#1b7f4b" x="74" y="378" width="152" height="104" rx="10"/>
+  <rect fill="#c62828" x="138" y="378" width="24" height="104" stroke="#12372a" stroke-width="4"/>
+  <rect class="k" fill="#22a05e" x="66" y="366" width="168" height="30" rx="8"/>
+  <rect fill="#c62828" x="138" y="366" width="24" height="30" stroke="#12372a" stroke-width="4"/>
+  <ellipse class="k" fill="#ffb6d0" cx="80" cy="400" rx="20" ry="16"/>
+  <ellipse class="k" fill="#ffb6d0" cx="220" cy="400" rx="20" ry="16"/>
+</g>
+</svg>

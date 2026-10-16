@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500">
+<!-- HALLOWEEN – "Ma Nợ" cầm hoá đơn dài, mặt hốt hoảng (bên trái) -->
+<style>
+.k{stroke:#14101c;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+.float{animation:fl 3s ease-in-out infinite}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+.shiver{animation:sv .12s linear infinite alternate;transform-origin:150px 300px}
+@keyframes sv{from{transform:translateX(-1.5px)}to{transform:translateX(1.5px)}}
+.blink{animation:bl 3.6s infinite;transform-box:fill-box;transform-origin:center}
+@keyframes bl{0%,90%,100%{transform:scaleY(1)}94%{transform:scaleY(.1)}}
+</style>
+<ellipse cx="150" cy="486" rx="80" ry="10" fill="#000" opacity=".25"/>
+<g class="float"><g class="shiver">
+  <path class="k" fill="#f7f4ff" d="M150 150 C70 150 56 230 58 300 L56 450 L84 426 L108 456 L132 426 L156 456 L180 426 L204 456 L228 426 L246 450 L244 300 C246 230 230 150 150 150 Z"/>
+  <path d="M80 260 C78 320 80 380 86 420" stroke="#d9d1f2" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <g class="blink"><ellipse fill="#14101c" cx="116" cy="248" rx="18" ry="26"/><ellipse fill="#14101c" cx="184" cy="248" rx="18" ry="26"/></g>
+  <circle cx="110" cy="238" r="6" fill="#fff"/><circle cx="178" cy="238" r="6" fill="#fff"/>
+  <ellipse class="k" fill="#14101c" cx="150" cy="310" rx="16" ry="22"/>
+  <path d="M96 210 L128 222 M204 210 L172 222" class="k"/>
+  <path fill="#7fd3ff" stroke="#14101c" stroke-width="3" d="M220 200 C212 214 212 222 220 224 C228 222 228 214 220 200 Z"/>
+  <!-- hoá đơn dài -->
+  <path class="k" fill="#fff" d="M196 330 L262 318 L270 470 L262 478 L254 470 L246 478 L238 470 L230 478 L222 470 L214 478 L206 470 Z" style="stroke-width:4"/>
+  <text x="232" y="350" font-family="Arial Black,Arial" font-weight="900" font-size="15" text-anchor="middle" fill="#e32b2b" transform="rotate(-8 232 350)">NỢ</text>
+  <path d="M212 372 h40 M214 392 h36 M214 412 h40 M216 432 h30" stroke="#b9b2c9" stroke-width="4" stroke-linecap="round" transform="rotate(-6 232 400)"/>
+  <ellipse class="k" fill="#f7f4ff" cx="206" cy="350" rx="18" ry="14"/>
+</g></g>
+</svg>

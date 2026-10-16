@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500">
+<!-- TRUNG THU – Đèn ông sao phát sáng, cầm cán (bên trái) -->
+<style>
+.k{stroke:#2a1f14;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+.spin{animation:spin 8s linear infinite;transform-origin:150px 250px}
+@keyframes spin{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}
+.halo{animation:halo 1.6s ease-in-out infinite alternate;transform-origin:150px 250px}
+@keyframes halo{from{opacity:.35;transform:scale(.92)}to{opacity:.8;transform:scale(1.06)}}
+.tw{animation:tw 1.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.t2{animation-delay:.6s}.t3{animation-delay:1.2s}
+@keyframes tw{0%,100%{transform:scale(.5);opacity:.4}50%{transform:scale(1.1);opacity:1}}
+</style>
+<path d="M150 250 L170 500" stroke="#2a1f14" stroke-width="16" stroke-linecap="round"/>
+<path d="M150 250 L170 500" stroke="#c98b4b" stroke-width="8" stroke-linecap="round"/>
+<circle class="halo" cx="150" cy="250" r="140" fill="#ffd36e"/>
+<g class="spin">
+  <path class="k" fill="#e32b2b" d="M150 120 L183 210 L278 212 L203 270 L230 362 L150 308 L70 362 L97 270 L22 212 L117 210 Z"/>
+  <path fill="#ff5a5f" d="M150 150 L174 218 L240 220 L188 260 L206 326 L150 288 Z" opacity=".55"/>
+  <path d="M150 120 L150 308 M22 212 L203 270 M278 212 L97 270" stroke="#ffd21f" stroke-width="4" opacity=".7"/>
+  <g fill="#ffd21f" stroke="#2a1f14" stroke-width="3">
+    <path d="M60 360 l-6 40 l12 0 Z"/><path d="M240 360 l6 40 l-12 0 Z"/><path d="M278 212 l30 20 l-6 8 Z"/><path d="M22 212 l-30 20 l6 8 Z"/>
+  </g>
+  <path class="k" fill="none" d="M128 238 q8 -10 16 0 M156 238 q8 -10 16 0" style="stroke-width:5"/>
+  <ellipse cx="122" cy="256" rx="10" ry="6" fill="#ffb3c1"/><ellipse cx="178" cy="256" rx="10" ry="6" fill="#ffb3c1"/>
+  <path class="k" fill="#7a1010" d="M138 258 Q150 276 162 258 Z" style="stroke-width:4"/>
+</g>
+<g fill="#fff4b0" stroke="#2a1f14" stroke-width="2.5" stroke-linejoin="round">
+  <path class="tw" transform="translate(40 100)" d="M0 -12 L4 -4 L12 0 L4 4 L0 12 L-4 4 L-12 0 L-4 -4 Z"/>
+  <path class="tw t2" transform="translate(262 120)" d="M0 -10 L3 -3 L10 0 L3 3 L0 10 L-3 3 L-10 0 L-3 -3 Z"/>
+  <path class="tw t3" transform="translate(260 420)" d="M0 -8 L3 -3 L8 0 L3 3 L0 8 L-3 3 L-8 0 L-3 -3 Z"/>
+</g>
+</svg>

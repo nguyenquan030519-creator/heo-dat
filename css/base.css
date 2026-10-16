@@ -1,0 +1,131 @@
+/* NỀN & THÀNH PHẦN CHUNG – màu sắc, phông chữ, thẻ, nút, ô nhập, thanh điều hướng.
+   Đổi màu toàn app: sửa các biến trong :root bên dưới. */
+:root {
+  --paper: #fff4d6;   /* nền giấy kem */
+  --card: #fffdf6;
+  --text: #2a1f14;
+  --muted: #7b6750;
+  --stroke: #2a1f14;  /* viền hoạt hình */
+  --line: #ead9b4;
+  --green: #14a06a; --green-dk: #0b6b46;
+  --gold: #ffcc33;  --gold-dk: #e0a400;
+  --orange: #ff8a3d; --red: #ef4b4b;
+  --bw: 3px;
+  --sh: 4px 4px 0 var(--stroke);
+  --sh-sm: 2px 2px 0 var(--stroke);
+  --r: 20px;
+  --font-head: "Baloo 2", ui-rounded, "Arial Rounded MT Bold", system-ui, sans-serif;
+  --font: "Nunito", ui-rounded, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='130' height='130'%3E%3Cg font-family='Arial Black,Arial' font-weight='900' fill='%23d9a400'%3E%3Ctext x='12' y='42' font-size='30' transform='rotate(-14 24 30)'%3E%24%3C/text%3E%3Ctext x='76' y='108' font-size='30' transform='rotate(12 88 96)'%3E%E2%82%AB%3C/text%3E%3Ccircle cx='100' cy='30' r='7' fill='none' stroke='%23d9a400' stroke-width='3'/%3E%3Ccircle cx='30' cy='100' r='4'/%3E%3C/g%3E%3C/svg%3E");
+  --pattern-op: .16;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0c3324; /* nỉ xanh bàn casino */
+    --card: #134631;
+    --text: #fff2cf;
+    --muted: #b6d5bf;
+    --stroke: #031a10;
+    --line: #22604a;
+    --green: #2fd08f;
+    --pattern-op: .1;
+  }
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; }
+body {
+  background: var(--paper); color: var(--text);
+  font: 700 16px/1.45 var(--font);
+  min-height: 100vh; min-height: 100dvh;
+  padding-bottom: calc(110px + env(safe-area-inset-bottom));
+  overflow-x: hidden;
+}
+body::before { content: ""; position: fixed; inset: 0; z-index: -1; background: var(--pattern) 0 0/130px; opacity: var(--pattern-op); pointer-events: none; }
+[hidden] { display: none !important; }
+
+.wrap { max-width: 520px; margin: 0 auto; padding: 8px 16px 0; }
+
+/* Đầu trang */
+.top { display: flex; align-items: center; gap: 10px; max-width: 520px; margin: 0 auto; padding: calc(12px + env(safe-area-inset-top)) 16px 8px; }
+.coin-logo {
+  width: 46px; height: 46px; flex: none; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ffe680, var(--gold) 55%, var(--gold-dk));
+  border: var(--bw) solid var(--stroke); box-shadow: var(--sh-sm);
+  display: grid; place-items: center; font: 800 26px/1 var(--font-head); color: #2a1f14;
+  animation: spin-coin 6s ease-in-out infinite;
+}
+.brand { min-width: 0; }
+.brand h1 { font: 800 26px/1 var(--font-head); margin: 0; letter-spacing: -.3px; }
+.brand .cycle { font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pill {
+  margin-left: auto; flex: none; border: 2px solid var(--stroke); border-radius: 999px;
+  padding: 5px 10px; font: 800 12px var(--font); background: var(--card); color: var(--text);
+  box-shadow: var(--sh-sm); cursor: pointer;
+}
+.pill.alert { background: var(--gold); color: #2a1f14; animation: pulse 1.6s infinite; }
+
+/* Thẻ & chữ */
+.card { background: var(--card); border: var(--bw) solid var(--stroke); border-radius: var(--r); box-shadow: var(--sh); padding: 16px; margin: 0 0 16px; }
+h2 { font: 800 19px/1.2 var(--font-head); margin: 0 0 8px; }
+.small { font-size: 13px; color: var(--muted); font-weight: 600; }
+.empty { text-align: center; color: var(--muted); padding: 10px 0; font-size: 14px; font-weight: 600; }
+.preview { font-size: 13px; color: var(--green); min-height: 18px; margin-top: 4px; }
+
+/* Nút */
+.btn {
+  font: 800 16px/1.1 var(--font-head); border: var(--bw) solid var(--stroke); border-radius: 14px;
+  padding: 10px 16px; min-height: 50px; background: var(--green); color: #fff;
+  box-shadow: var(--sh); cursor: pointer; transition: transform .08s, box-shadow .08s;
+}
+.btn:active { transform: translate(3px, 3px); box-shadow: 1px 1px 0 var(--stroke); }
+.btn.gold { background: var(--gold); color: #2a1f14; }
+.btn.ghost { background: var(--card); color: var(--text); }
+.btn.block { width: 100%; margin-bottom: 16px; font-size: 18px; }
+.btn.sm { min-height: 42px; padding: 6px 12px; font-size: 15px; box-shadow: var(--sh-sm); }
+
+/* Ô nhập (16px để iPhone không tự phóng to) */
+input, select {
+  width: 100%; font: 700 16px var(--font); color: var(--text); background: var(--paper);
+  border: var(--bw) solid var(--stroke); border-radius: 14px; padding: 10px 12px; min-height: 50px;
+}
+input:focus { outline: none; box-shadow: 0 0 0 3px var(--gold); }
+input::placeholder { color: var(--muted); opacity: .8; }
+label { display: block; font-size: 13px; color: var(--muted); margin: 12px 0 5px; font-weight: 800; }
+.row { display: flex; gap: 8px; align-items: center; }
+.row > * { flex: 1; min-width: 0; }
+
+/* Dòng khoản chi */
+.item { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 2px dashed var(--line); }
+.item:last-child { border-bottom: none; }
+.item .ic { width: 42px; height: 42px; flex: none; border-radius: 12px; border: 2px solid var(--stroke); background: var(--paper); display: grid; place-items: center; font-size: 21px; }
+.item .t { flex: 1; min-width: 0; }
+.item .t b { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.item .t .small { display: block; font-size: 12px; }
+.item .amt { font: 800 16px var(--font-head); white-space: nowrap; }
+.item .amt.in { color: var(--green); }
+.x { border: none; background: none; color: var(--muted); font-size: 17px; width: 36px; height: 36px; flex: none; cursor: pointer; border-radius: 10px; }
+.x:active { background: var(--line); }
+.rline { display: flex; justify-content: space-between; gap: 10px; padding: 4px 0; font-size: 14px; }
+.rline.total { border-top: 2px dashed currentColor; margin-top: 6px; padding-top: 8px; font-weight: 800; font-size: 16px; }
+
+/* Thanh điều hướng dưới */
+#nav { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; padding: 8px 12px calc(10px + env(safe-area-inset-bottom)); display: flex; justify-content: center; pointer-events: none; }
+#nav .bar { pointer-events: auto; display: flex; gap: 6px; width: 100%; max-width: 440px; background: var(--card); border: var(--bw) solid var(--stroke); border-radius: 22px; box-shadow: var(--sh); padding: 6px; }
+#nav button { flex: 1; border: 2px solid transparent; background: none; border-radius: 16px; padding: 4px; min-height: 54px; font: 800 12px var(--font); color: var(--muted); cursor: pointer; }
+#nav button span { display: block; font-size: 22px; line-height: 1.15; }
+#nav button.on { background: var(--gold); color: #2a1f14; border-color: var(--stroke); }
+
+/* Nút + vàng nổi */
+#fab {
+  position: fixed; z-index: 21; right: max(16px, calc(50% - 244px)); bottom: calc(96px + env(safe-area-inset-bottom));
+  width: 68px; height: 68px; border-radius: 50%; cursor: pointer;
+  background: radial-gradient(circle at 35% 30%, #ffe680, var(--gold) 55%, var(--gold-dk));
+  border: var(--bw) solid var(--stroke); box-shadow: var(--sh);
+  font: 800 42px/1 var(--font-head); color: #2a1f14; padding-bottom: 4px;
+}
+#fab:active { transform: translate(3px, 3px) scale(.94); box-shadow: 1px 1px 0 var(--stroke); }
+
+/* Thanh báo cần mở file */
+#banner { position: sticky; top: 0; z-index: 30; padding: calc(6px + env(safe-area-inset-top)) 12px 6px; background: var(--gold); border-bottom: var(--bw) solid var(--stroke); }
+#banner button { display: block; width: 100%; max-width: 520px; margin: auto; border: none; background: none; font: 800 15px var(--font-head); color: #2a1f14; cursor: pointer; padding: 6px; }

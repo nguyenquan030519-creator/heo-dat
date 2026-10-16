@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500">
+<!-- TẾT – Bao Lì Xì cười tít, cành mai đung đưa (bên trái) -->
+<style>
+.k{stroke:#4a0d0d;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+.sway{animation:sway 3s ease-in-out infinite;transform-origin:10px 120px}
+@keyframes sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(4deg)}}
+.pop{animation:pop 2.4s ease-out infinite;opacity:0}
+.p2{animation-delay:.8s}.p3{animation-delay:1.6s}
+@keyframes pop{0%{transform:translate(0,0) scale(.4);opacity:0}20%{opacity:1}100%{transform:translate(var(--x),-150px) scale(1);opacity:0}}
+.bob{animation:bob 2.6s ease-in-out infinite;transform-origin:150px 480px}
+@keyframes bob{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+</style>
+<!-- cành mai -->
+<g class="sway">
+  <path d="M0 120 C60 110 110 140 170 120 M80 122 C100 90 130 80 150 70" stroke="#5b3a1e" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <g fill="#ffd21f" stroke="#4a0d0d" stroke-width="3">
+    <g transform="translate(60 112)"><circle r="7" cx="0" cy="-8"/><circle r="7" cx="8" cy="-2"/><circle r="7" cx="5" cy="7"/><circle r="7" cx="-5" cy="7"/><circle r="7" cx="-8" cy="-2"/><circle r="3.5" fill="#e85d04"/></g>
+    <g transform="translate(150 70)"><circle r="7" cx="0" cy="-8"/><circle r="7" cx="8" cy="-2"/><circle r="7" cx="5" cy="7"/><circle r="7" cx="-5" cy="7"/><circle r="7" cx="-8" cy="-2"/><circle r="3.5" fill="#e85d04"/></g>
+    <g transform="translate(165 122)"><circle r="6" cx="0" cy="-7"/><circle r="6" cx="7" cy="-2"/><circle r="6" cx="4" cy="6"/><circle r="6" cx="-4" cy="6"/><circle r="6" cx="-7" cy="-2"/><circle r="3" fill="#e85d04"/></g>
+  </g>
+</g>
+<!-- xu bắn ra -->
+<g fill="#ffd21f" stroke="#4a0d0d" stroke-width="3">
+  <circle class="pop" style="--x:-40px" cx="150" cy="250" r="12"/>
+  <circle class="pop p2" style="--x:30px" cx="150" cy="250" r="10"/>
+  <circle class="pop p3" style="--x:-10px" cx="150" cy="250" r="11"/>
+</g>
+<g class="bob">
+  <rect class="k" fill="#e32b2b" x="58" y="226" width="184" height="252" rx="20"/>
+  <path class="k" fill="#c41d1d" d="M58 246 L150 318 L242 246 L242 246 C242 236 234 226 222 226 L78 226 C66 226 58 236 58 246 Z"/>
+  <circle class="k" fill="#ffd21f" cx="150" cy="316" r="28"/>
+  <text x="150" y="327" font-family="Arial Black,Arial" font-weight="900" font-size="30" text-anchor="middle" fill="#a31515">₫</text>
+  <text x="150" y="458" font-family="Arial Black,Arial" font-weight="900" font-size="34" text-anchor="middle" fill="#ffd21f" stroke="#4a0d0d" stroke-width="2">LỘC</text>
+  <path class="k" fill="none" d="M100 372 l12 -12 l12 12 M176 372 l12 -12 l12 12"/>
+  <ellipse cx="96" cy="392" rx="14" ry="8" fill="#ff9aa8"/><ellipse cx="204" cy="392" rx="14" ry="8" fill="#ff9aa8"/>
+  <path class="k" fill="#7a1010" d="M126 388 Q150 418 174 388 Z"/>
+  <path class="k" fill="#e32b2b" d="M58 330 C30 320 24 290 34 276" style="stroke-width:14"/>
+  <path d="M58 330 C30 320 24 290 34 276" stroke="#e32b2b" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path class="k" fill="#e32b2b" d="M242 330 C270 320 276 290 266 276" style="stroke-width:14"/>
+  <path d="M242 330 C270 320 276 290 266 276" stroke="#e32b2b" stroke-width="5" fill="none" stroke-linecap="round"/>
+</g>
+</svg>

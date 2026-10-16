@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500">
+<!-- BOBBLE SẾP – Bà Chủ Tiệm Vàng đầu lò xo, phì xì gà ra vòng khói (bên phải) -->
+<style>
+.k{stroke:#2a0f45;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+.head{animation:bob 2.2s ease-in-out infinite;transform-origin:150px 330px}
+@keyframes bob{0%,100%{transform:rotate(0)}12%{transform:rotate(-9deg) translateY(-4px)}26%{transform:rotate(7deg)}40%{transform:rotate(-5deg)}55%{transform:rotate(3deg)}70%{transform:rotate(-1.5deg)}}
+.ring{animation:ring 3s ease-out infinite;opacity:0;transform-box:fill-box;transform-origin:center}
+.r2{animation-delay:1s}.r3{animation-delay:2s}
+@keyframes ring{0%{transform:translate(0,0) scale(.4);opacity:0}15%{opacity:.95}100%{transform:translate(-40px,-150px) scale(1.8);opacity:0}}
+.ember{animation:glow 1s ease-in-out infinite alternate}
+@keyframes glow{from{fill:#ff5a1f}to{fill:#ffd000}}
+.puff{animation:puff 3s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes puff{0%,70%,100%{transform:scale(1)}80%{transform:scale(1.3,.8)}}
+.shine{animation:shine 1.5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes shine{0%,100%{transform:scale(.4);opacity:.3}50%{transform:scale(1.1);opacity:1}}
+</style>
+<!-- bệ -->
+<rect class="k" fill="#ffcc33" x="62" y="448" width="176" height="44" rx="10"/>
+<ellipse class="k" fill="#ffe27a" cx="150" cy="448" rx="88" ry="14"/>
+<text x="150" y="482" font-family="Arial Black,Arial" font-weight="900" font-size="22" text-anchor="middle" fill="#2a0f45">VÀNG</text>
+<!-- thân áo đỏ, vòng vàng -->
+<path class="k" fill="#d62839" d="M104 450 C102 384 122 350 150 350 C178 350 198 384 196 450 Z"/>
+<path d="M116 372 Q150 400 184 372" stroke="#ffcc33" stroke-width="7" fill="none" stroke-dasharray="6 4"/>
+<circle class="k" fill="#ffcc33" cx="150" cy="394" r="9" style="stroke-width:3"/>
+<path class="k" fill="#d62839" d="M188 380 C204 398 206 420 196 436" style="stroke-width:16"/>
+<path d="M188 380 C204 398 206 420 196 436" stroke="#d62839" stroke-width="6" fill="none" stroke-linecap="round"/>
+<circle class="k" fill="#f6cba2" cx="194" cy="440" r="11" style="stroke-width:4"/>
+<g fill="#ffcc33" stroke="#2a0f45" stroke-width="3"><rect x="186" y="430" width="6" height="6"/><rect x="196" y="432" width="6" height="6"/></g>
+<path d="M150 352 l-10 -5 l20 -5 l-20 -5 l20 -5 l-10 -5" stroke="#9aa0a6" stroke-width="5" fill="none" stroke-linejoin="round"/>
+<!-- vòng khói -->
+<g fill="none" stroke="#c9ced6" stroke-width="7">
+  <ellipse class="ring" cx="50" cy="240" rx="16" ry="10"/>
+  <ellipse class="ring r2" cx="50" cy="240" rx="16" ry="10"/>
+  <ellipse class="ring r3" cx="50" cy="240" rx="16" ry="10"/>
+</g>
+<g class="head">
+  <!-- búi tóc xoăn -->
+  <g class="k" fill="#1e1428"><circle cx="150" cy="70" r="40"/><circle cx="110" cy="84" r="26"/><circle cx="190" cy="84" r="26"/></g>
+  <circle class="k" fill="#f9d3ae" cx="150" cy="212" r="112"/>
+  <path class="k" fill="#1e1428" d="M38 206 C30 112 270 104 262 206 C246 150 196 132 150 140 C104 132 54 150 38 206 Z"/>
+  <!-- kính râm đẩy lên tóc -->
+  <rect x="96" y="120" width="46" height="26" rx="10" fill="#ff4d8d" stroke="#2a0f45" stroke-width="5"/>
+  <rect x="158" y="120" width="46" height="26" rx="10" fill="#ff4d8d" stroke="#2a0f45" stroke-width="5"/>
+  <path d="M142 132 h16" stroke="#2a0f45" stroke-width="5"/>
+  <!-- bông tai vàng -->
+  <circle cx="40" cy="250" r="16" fill="none" stroke="#2a0f45" stroke-width="10"/><circle cx="40" cy="250" r="16" fill="none" stroke="#ffcc33" stroke-width="5"/>
+  <circle cx="260" cy="250" r="16" fill="none" stroke="#2a0f45" stroke-width="10"/><circle cx="260" cy="250" r="16" fill="none" stroke="#ffcc33" stroke-width="5"/>
+  <path class="shine" fill="#fff6b0" stroke="#2a0f45" stroke-width="2" transform="translate(272 226)" d="M0 -9 L3 -3 L9 0 L3 3 L0 9 L-3 3 L-9 0 L-3 -3 Z"/>
+  <!-- mắt lim dim sang chảnh -->
+  <path class="k" fill="#fff" d="M92 204 Q116 186 140 204 Q116 214 92 204 Z" style="stroke-width:5"/>
+  <path class="k" fill="#fff" d="M160 204 Q184 186 208 204 Q184 214 160 204 Z" style="stroke-width:5"/>
+  <circle fill="#2a0f45" cx="116" cy="204" r="7"/><circle fill="#2a0f45" cx="184" cy="204" r="7"/>
+  <path class="k" fill="none" d="M90 194 Q116 178 142 194 M158 194 Q184 178 210 194" style="stroke-width:7"/>
+  <path d="M92 192 l-8 -8 M100 188 l-5 -9 M208 192 l8 -8 M200 188 l5 -9" stroke="#2a0f45" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="86" cy="244" rx="18" ry="10" fill="#ff7aa8" opacity=".6"/><ellipse cx="214" cy="244" rx="18" ry="10" fill="#ff7aa8" opacity=".6"/>
+  <!-- môi đỏ ngậm xì gà -->
+  <g class="puff"><ellipse class="k" fill="#e5383b" cx="136" cy="268" rx="18" ry="14" style="stroke-width:5"/></g>
+  <rect class="k" fill="#8b5a2b" x="56" y="260" width="72" height="16" rx="7" transform="rotate(-8 128 268)" style="stroke-width:5"/>
+  <rect fill="#ffcc33" x="106" y="260" width="10" height="16" stroke="#2a0f45" stroke-width="3" transform="rotate(-8 128 268)"/>
+  <circle class="ember" cx="56" cy="276" r="6"/>
+</g>
+</svg>

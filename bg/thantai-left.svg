@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500">
+<!-- BOBBLE THẦN TÀI – Mèo thần tài đầu lò xo, vẫy tay gọi tiền (bên trái) -->
+<style>
+.k{stroke:#4a0d0d;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+.head{animation:bob 2s ease-in-out infinite;transform-origin:150px 320px}
+@keyframes bob{0%,100%{transform:rotate(0)}12%{transform:rotate(9deg) translateY(-3px)}26%{transform:rotate(-7deg)}40%{transform:rotate(5deg)}55%{transform:rotate(-3deg)}70%{transform:rotate(1deg)}}
+.paw{animation:wave .7s ease-in-out infinite alternate;transform-origin:200px 380px}
+@keyframes wave{from{transform:rotate(-10deg)}to{transform:rotate(-55deg)}}
+.bell{animation:bell .35s ease-in-out infinite alternate;transform-origin:150px 334px}
+@keyframes bell{from{transform:rotate(-14deg)}to{transform:rotate(14deg)}}
+.coin{animation:fall 2.4s ease-in infinite;opacity:0}
+.k2{animation-delay:.8s}.k3{animation-delay:1.6s}
+@keyframes fall{0%{transform:translate(0,-60px);opacity:0}15%{opacity:1}100%{transform:translate(var(--x),140px);opacity:0}}
+</style>
+<g fill="#ffcc33" stroke="#4a0d0d" stroke-width="3">
+  <g class="coin" style="--x:-20px"><circle cx="250" cy="200" r="11"/><rect x="246" y="196" width="8" height="8" fill="#c1121f"/></g>
+  <g class="coin k2" style="--x:10px"><circle cx="270" cy="160" r="9"/><rect x="267" y="157" width="6" height="6" fill="#c1121f"/></g>
+  <g class="coin k3" style="--x:-30px"><circle cx="232" cy="180" r="10"/><rect x="228" y="176" width="8" height="8" fill="#c1121f"/></g>
+</g>
+<!-- bệ đỏ -->
+<rect class="k" fill="#c1121f" x="62" y="448" width="176" height="44" rx="10"/>
+<ellipse class="k" fill="#e5383b" cx="150" cy="448" rx="88" ry="14"/>
+<text x="150" y="482" font-family="Arial Black,Arial" font-weight="900" font-size="22" text-anchor="middle" fill="#ffcc33">PHÁT</text>
+<!-- thân mèo -->
+<ellipse class="k" fill="#fffaf2" cx="150" cy="400" rx="64" ry="58"/>
+<ellipse fill="#ffe3cc" cx="150" cy="410" rx="38" ry="36"/>
+<circle class="k" fill="#ffcc33" cx="118" cy="414" r="30"/>
+<text x="118" y="426" font-family="Arial Black,Arial" font-weight="900" font-size="30" text-anchor="middle" fill="#4a0d0d">₫</text>
+<ellipse class="k" fill="#fffaf2" cx="96" cy="414" rx="14" ry="18"/>
+<!-- vòng cổ & chuông -->
+<path class="k" fill="#c1121f" d="M104 340 Q150 360 196 340 L196 352 Q150 372 104 352 Z" style="stroke-width:4"/>
+<g class="bell"><circle class="k" fill="#ffcc33" cx="150" cy="366" r="12" style="stroke-width:4"/><path d="M144 368 h12" stroke="#4a0d0d" stroke-width="3"/></g>
+<path d="M150 344 l-10 -5 l20 -5 l-20 -5 l20 -5 l-10 -5" stroke="#9aa0a6" stroke-width="5" fill="none" stroke-linejoin="round"/>
+<!-- đầu to -->
+<g class="head">
+  <path class="k" fill="#fffaf2" d="M52 150 L66 54 L130 112 Z"/>
+  <path fill="#ff9cc0" d="M66 82 L72 130 L104 112 Z"/>
+  <path class="k" fill="#ff9a3c" d="M248 150 L234 54 L170 112 Z"/>
+  <path fill="#ff9cc0" d="M234 82 L228 130 L196 112 Z"/>
+  <ellipse class="k" fill="#fffaf2" cx="150" cy="206" rx="118" ry="106"/>
+  <path fill="#ff9a3c" d="M180 104 C230 110 262 150 266 196 C236 182 206 160 186 130 Z"/>
+  <path fill="#2b2b2b" d="M70 128 C90 112 116 104 132 104 C120 124 98 140 66 146 Z"/>
+  <path class="k" fill="none" d="M94 206 q20 -22 40 0 M166 206 q20 -22 40 0" style="stroke-width:7"/>
+  <ellipse cx="88" cy="238" rx="18" ry="10" fill="#ff9cc0"/><ellipse cx="212" cy="238" rx="18" ry="10" fill="#ff9cc0"/>
+  <path fill="#ff7aa8" stroke="#4a0d0d" stroke-width="3" d="M142 228 L158 228 L150 238 Z"/>
+  <path class="k" fill="none" d="M132 248 Q141 258 150 248 Q159 258 168 248" style="stroke-width:4"/>
+  <path d="M60 232 L20 224 M60 244 L18 248 M240 232 L280 224 M240 244 L282 248" stroke="#4a0d0d" stroke-width="3" stroke-linecap="round"/>
+</g>
+<!-- tay vẫy -->
+<g class="paw">
+  <path class="k" fill="#fffaf2" d="M196 384 C214 370 222 344 220 322 C232 316 244 326 240 340 C236 362 222 384 204 398 Z"/>
+  <path d="M226 328 l0 8 M233 330 l-1 8" stroke="#4a0d0d" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="230" cy="324" rx="6" ry="4" fill="#ff9cc0"/>
+</g>
+</svg>

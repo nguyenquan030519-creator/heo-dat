@@ -1,0 +1,58 @@
+/* MÀN HÌNH HÔM NAY – tờ tiền lớn, Heo Đất, 4 thẻ dán */
+
+.bill {
+  position: relative; overflow: hidden; margin-bottom: 18px;
+  padding: 20px 20px 18px; color: #fff;
+  background:
+    radial-gradient(circle at 85% 120%, rgba(255,255,255,.18) 0 70px, transparent 71px),
+    repeating-linear-gradient(-45deg, rgba(255,255,255,.05) 0 8px, transparent 8px 16px),
+    linear-gradient(135deg, #22b77f, #0d7a50);
+  border: var(--bw) solid var(--stroke); border-radius: 24px; box-shadow: var(--sh);
+  transition: background .3s;
+}
+.bill::before { content: ""; position: absolute; inset: 8px; border: 2px dashed rgba(255,255,255,.55); border-radius: 17px; pointer-events: none; }
+.bill::after { content: "₫"; position: absolute; right: 6px; bottom: -46px; font: 800 150px/1 var(--font-head); color: rgba(255,255,255,.13); pointer-events: none; }
+.bill.warn { background: repeating-linear-gradient(-45deg, rgba(255,255,255,.06) 0 8px, transparent 8px 16px), linear-gradient(135deg, #ffb347, #f2700f); }
+.bill.bad { background: repeating-linear-gradient(-45deg, rgba(255,255,255,.06) 0 8px, transparent 8px 16px), linear-gradient(135deg, #ff6b6b, #c92a2a); }
+.seal {
+  position: absolute; top: 16px; right: 16px; width: 34px; height: 34px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ffe680, var(--gold) 60%, var(--gold-dk));
+  border: 2px solid var(--stroke); display: grid; place-items: center;
+  font: 800 18px/1 var(--font-head); color: #2a1f14; box-shadow: 2px 2px 0 var(--stroke);
+}
+.bill-lbl { position: relative; font: 800 15px var(--font-head); opacity: .95; }
+.bill-amt {
+  position: relative; margin: 4px 0 4px; font: 800 46px/1.1 var(--font-head); letter-spacing: -.5px;
+  -webkit-text-stroke: 2px var(--stroke); paint-order: stroke fill; text-shadow: 3px 3px 0 var(--stroke);
+  font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+.bill-note { position: relative; font-size: 13px; font-weight: 800; opacity: .95; }
+@media (max-width: 370px) { .bill-amt { font-size: 38px; } }
+
+/* Heo Đất + bóng thoại */
+.mascot { display: flex; align-items: flex-start; gap: 12px; margin: 0 0 18px; }
+.pig { position: relative; flex: none; font-size: 54px; line-height: 1; cursor: pointer; user-select: none; animation: bob 2.6s ease-in-out infinite; filter: drop-shadow(2px 2px 0 var(--stroke)); }
+.pig .mood { position: absolute; right: -8px; top: -6px; font-size: 22px; animation: twinkle 1.4s ease-in-out infinite; }
+.bubble {
+  position: relative; flex: 1; min-height: 58px; cursor: pointer;
+  background: var(--card); border: var(--bw) solid var(--stroke); border-radius: 18px; box-shadow: var(--sh-sm);
+  padding: 10px 12px; font-size: 14px; font-weight: 700;
+}
+.bubble::before {
+  content: ""; position: absolute; left: -10px; top: 18px; width: 16px; height: 16px;
+  background: var(--card); border-left: var(--bw) solid var(--stroke); border-bottom: var(--bw) solid var(--stroke);
+  transform: rotate(45deg);
+}
+.bubble .dots { font-size: 11px; color: var(--muted); margin-top: 4px; font-weight: 600; }
+
+/* 4 thẻ dán */
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 18px; }
+.sticker { border: var(--bw) solid var(--stroke); border-radius: 18px; box-shadow: var(--sh-sm); padding: 10px 12px; color: #2a1f14; min-width: 0; }
+.sticker:nth-child(1) { background: #ffe39a; transform: rotate(-1.2deg); }
+.sticker:nth-child(2) { background: #bff0d6; transform: rotate(1deg); }
+.sticker:nth-child(3) { background: #cfe6ff; transform: rotate(.8deg); }
+.sticker:nth-child(4) { background: #ffd1df; transform: rotate(-.9deg); }
+.sticker .ico { font-size: 20px; line-height: 1.2; }
+.sticker .lbl { font-size: 12px; font-weight: 800; color: #6a5338; }
+.sticker .val { font: 800 19px/1.2 var(--font-head); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-variant-numeric: tabular-nums; }
+@media (max-width: 370px) { .sticker .val { font-size: 16px; } }

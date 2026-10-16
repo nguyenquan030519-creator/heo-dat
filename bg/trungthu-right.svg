@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500">
+<!-- TRUNG THU – Bánh nướng nhân trứng muối dưới trăng rằm (bên phải) -->
+<style>
+.k{stroke:#2a1f14;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+.moon{animation:moon 4s ease-in-out infinite alternate}
+@keyframes moon{from{opacity:.75}to{opacity:1}}
+.bob{animation:bob 2.6s ease-in-out infinite;transform-origin:150px 480px}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-6px) rotate(2deg)}}
+</style>
+<g class="moon"><circle cx="196" cy="110" r="78" fill="#fff1b8"/><circle cx="196" cy="110" r="62" fill="#ffe27a"/>
+  <circle cx="176" cy="96" r="10" fill="#f2c94c"/><circle cx="214" cy="132" r="14" fill="#f2c94c"/><circle cx="220" cy="90" r="6" fill="#f2c94c"/></g>
+<g class="bob">
+  <path class="k" fill="#d38b3a" d="M150 248 C176 248 180 262 198 262 C216 262 226 280 236 290 C252 304 266 316 266 340 C266 362 280 374 278 394 C276 418 262 432 248 446 C232 462 218 478 196 478 C176 478 168 486 150 486 C132 486 124 478 104 478 C82 478 68 462 52 446 C38 432 24 418 22 394 C20 374 34 362 34 340 C34 316 48 304 64 290 C74 280 84 262 102 262 C120 262 124 248 150 248 Z"/>
+  <circle cx="150" cy="368" r="92" fill="#e9a656" stroke="#2a1f14" stroke-width="4"/>
+  <circle cx="150" cy="368" r="72" fill="none" stroke="#a8641f" stroke-width="5" stroke-dasharray="4 8"/>
+  <!-- miếng cắt lộ trứng muối -->
+  <path class="k" fill="#f6e3b4" d="M150 368 L236 330 A92 92 0 0 1 242 400 Z" style="stroke-width:4"/>
+  <circle cx="214" cy="370" r="15" fill="#ff9f1c" stroke="#2a1f14" stroke-width="3"/>
+  <ellipse fill="#2a1f14" cx="118" cy="352" rx="8" ry="11"/><ellipse fill="#2a1f14" cx="164" cy="350" rx="8" ry="11"/>
+  <circle cx="115" cy="347" r="3" fill="#fff"/><circle cx="161" cy="345" r="3" fill="#fff"/>
+  <ellipse cx="102" cy="376" rx="12" ry="7" fill="#ff9aa8" opacity=".8"/>
+  <path class="k" fill="none" d="M126 380 Q140 394 154 380" style="stroke-width:4"/>
+</g>
+</svg>

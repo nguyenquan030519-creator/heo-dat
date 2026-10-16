@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500">
+<!-- NOEL – Người tuyết quàng khăn ôm đồng xu (bên trái) -->
+<style>
+.k{stroke:#12372a;stroke-width:6;stroke-linejoin:round;stroke-linecap:round}
+.scarf{animation:sc 1.6s ease-in-out infinite alternate;transform-origin:196px 300px}
+@keyframes sc{from{transform:rotate(-6deg)}to{transform:rotate(10deg)}}
+.wob{animation:wob 3s ease-in-out infinite;transform-origin:150px 480px}
+@keyframes wob{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+</style>
+<g class="wob">
+  <circle class="k" fill="#ffffff" cx="150" cy="404" r="88"/>
+  <circle class="k" fill="#ffffff" cx="150" cy="248" r="70"/>
+  <path d="M90 380 C86 420 96 450 116 470" stroke="#d7ebf3" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <!-- mũ len -->
+  <path class="k" fill="#c62828" d="M90 210 C96 150 204 150 210 210 Z"/>
+  <rect class="k" fill="#ffffff" x="82" y="200" width="136" height="24" rx="12"/>
+  <circle class="k" fill="#ffffff" cx="150" cy="150" r="16"/>
+  <!-- mặt -->
+  <circle fill="#12372a" cx="126" cy="246" r="8"/><circle fill="#12372a" cx="174" cy="246" r="8"/>
+  <path class="k" fill="#ff8a1a" d="M148 260 L210 272 L148 278 Z" style="stroke-width:4"/>
+  <ellipse cx="112" cy="268" rx="11" ry="6" fill="#ffb3c1"/><ellipse cx="186" cy="282" rx="11" ry="6" fill="#ffb3c1"/>
+  <path class="k" fill="none" d="M128 290 Q146 302 164 292" style="stroke-width:4"/>
+  <!-- khăn -->
+  <path class="k" fill="#1b7f4b" d="M92 304 Q150 330 208 304 L210 326 Q150 352 90 326 Z"/>
+  <path class="k scarf" fill="#1b7f4b" d="M184 320 L206 316 L218 384 L196 388 Z"/>
+  <path d="M110 316 l0 18 M140 324 l0 18 M170 324 l0 18" stroke="#c62828" stroke-width="6"/>
+  <!-- cúc áo & đồng xu -->
+  <circle fill="#12372a" cx="150" cy="372" r="7"/>
+  <circle class="k" fill="#ffd36e" cx="150" cy="428" r="34"/>
+  <text x="150" y="441" font-family="Arial Black,Arial" font-weight="900" font-size="34" text-anchor="middle" fill="#12372a">₫</text>
+  <path class="k" fill="none" d="M64 380 L20 330 M30 342 L14 336 M30 342 L26 324"/>
+  <path class="k" fill="none" d="M236 380 L280 330 M270 342 L286 336 M270 342 L274 324"/>
+</g>
+</svg>
