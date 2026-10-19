@@ -1,6 +1,6 @@
 /* CHẠY OFFLINE – chỉ hoạt động khi app được mở qua một đường link (http/https).
    Luôn thử lấy bản mới nhất trước, mất mạng thì dùng bản đã lưu. */
-const V = 'heodat-v10';
+const V = 'heodat-v11';
 const SHELL = ['./', 'index.html', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png',
   'css/base.css', 'css/today.css', 'css/entry.css', 'css/month.css', 'css/settings.css', 'css/effects.css',
   'js/config.js', 'js/money.js', 'js/dates.js', 'js/calc.js', 'js/storage.js', 'js/ui.js', 'js/effects.js',
@@ -28,6 +28,7 @@ const SHELL = ['./', 'index.html', 'manifest.webmanifest', 'icons/icon.svg', 'ic
   'js/theme-preview.js',
   'css/theme-scene.css',
   'css/theme-motion.css',
+  'css/theme-mobile.css',
   'bg/expressions/bateman-ooo.webp',
   'bg/expressions/rock-smolder.webp',
   'css/themes/tet-kitty.css',

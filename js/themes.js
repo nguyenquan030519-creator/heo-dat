@@ -10,10 +10,13 @@
     const root = document.documentElement;
     root.dataset.theme = t.id;
     root.classList.toggle('cinematic', !!t.cinematic);
+    root.classList.toggle('has-scene', !!(t.left || t.right));
     if (!scene) {
       scene = document.createElement('div');
       scene.id = 'scene'; scene.setAttribute('aria-hidden', 'true');
-      document.body.prepend(scene);
+      // Mobile: this becomes an in-flow stage between the header and content.
+      // Desktop/preview keep the same node fixed via CSS, without duplicate images.
+      document.querySelector('.top').after(scene);
     }
     App.themeMotion.stop();
     scene.replaceChildren();
